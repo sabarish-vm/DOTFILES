@@ -19,7 +19,3 @@ darwin)
     ;;
 ##
 esac
-
-export PLATFORM="$platform"
-
-sh "${path}/${platform}_essentials.sh"
