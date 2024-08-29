@@ -2,6 +2,8 @@
 
 [ -z "$DOTFILES" ] && { export DOTFILES="$HOME/.dotfiles" ; }
 
+source $DOTFILES/cli_tools/setup.sh
+
 link() {
     linkerFile="$1"
     sourceFile="$(cat ${linkerFile} | awk -F '==' '{ printf $1 }')"
