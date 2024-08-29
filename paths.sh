@@ -1,0 +1,5 @@
+export opt="$HOME/opt"
+export optbin="$HOME/opt/bin"
+export dotfiles="$HOME/.dotfiles"
+export egetbin="$HOME/bin/eget"
+export condaexe=""
