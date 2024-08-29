@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-[ -z "$DOTFILES" ] && {export DOTFILES="$HOME/.dotfiles" ; }
+[ -z "$DOTFILES" ] && { export DOTFILES="$HOME/.dotfiles" ; }
 
 link() {
     linkerFile="$1"
