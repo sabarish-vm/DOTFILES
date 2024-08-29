@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-if [ -f "$DOTFILES/conda/conda_init.zsh" ] ; then
-    source "$DOTFILES/conda/conda_init.zsh"
+if [ -f "$DOTFILES/conda/conda_init_gen.zsh" ] ; then
+    source "$DOTFILES/conda/conda_init_gen.zsh"
 else 
     conda_bin="$(sh $DOTFILES/conda/conda_path.sh)"
     contents="$($conda_bin init zsh -d -v)"
