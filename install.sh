@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 
 source $HOME/.dotfiles/paths.sh
+mkdir -p "$egetbin"
+
 [ -z "$DOTFILES" ] && { export DOTFILES="$HOME/.dotfiles" ; }
 
 source $DOTFILES/cli_tools/setup.sh
