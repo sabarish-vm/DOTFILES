@@ -1,4 +1,4 @@
-[ -d "$DOTFILES/completions" ] && : || mkdir -p "$DOTFILES/completions"
+[ -d "$DOTFILES/zsh/completions" ] && : || mkdir -p "$DOTFILES/zsh/completions"
 
 if [ -f "$DOTFILES/zsh/completions/_zellij" ] ; then
     :
