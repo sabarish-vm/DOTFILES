@@ -1,5 +1,6 @@
 ############################ cd to z
-alias cd='z'
+#alias cd='__zoxide_cd' #Not a great idea do not do this
+#if needed use (zoxide init zsh --cmd cd) to replace z with cd and zi with cdi
 
 #################################### ls to eza
 eza_params=(
