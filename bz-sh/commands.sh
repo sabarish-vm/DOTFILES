@@ -8,4 +8,5 @@ githubdownload() {
     fi
 }
 bookopen() { fd "$1" $HOME/Books/ | fzf --bind 'enter:become(open {})'; }
+gfd() { cd "$(fzf -e --bind 'enter:become(dirname {})')"; }
 mat2pyParser() { python -c "from sympy.parsing.mathematica import parse_mathematica;expr=parse_mathematica(""'""${1}""'"") ;print();print(expr)"; }
