@@ -25,12 +25,3 @@ eval "$(starship init zsh)"
 source "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
 
 source "$DOTFILES/bz-sh/device_finalization.sh"
-
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-path=('/Users/sabarish/.juliaup/bin' $path)
-export PATH
-
-# <<< juliaup initialize <<<
