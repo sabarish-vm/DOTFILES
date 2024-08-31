@@ -3,7 +3,7 @@
 welcome_message=''
 [[ "$-" == *i* ]] && tty -s && echo "${welcome_message}"
 source "$HOME/.dotfiles/bz-sh/init_env.sh"
-source "$HOME/.dotfiles/bz-sh/init_dev_env.sh"
+source "$HOME/.dotfiles/bz-sh/device_initialization.sh"
 
 eval "$(zoxide init zsh)"
 source "$DOTFILES/conda/conda.zsh"
@@ -24,7 +24,7 @@ export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 eval "$(starship init zsh)"
 source "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
 
-source "$DOTFILES/bz-sh/final_dev_env.sh"
+source "$DOTFILES/bz-sh/device_finalization.sh"
 
 # >>> juliaup initialize >>>
 
