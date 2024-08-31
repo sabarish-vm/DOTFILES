@@ -21,7 +21,7 @@ cli_manager_ins() {
 
 conda_ins() {
     condaexe=$(echo "$condaexe" | tr -d '[:space:]')
-    [ -n "${condaexe}" ] && { echo "${condaexe}" >"$DOTFILES/conda/conda_path.gen"; }
+    [ -f "${condaexe}" ] && { echo "${condaexe}" >"$DOTFILES/conda/conda_path.gen"; }
 }
 
 zsh_ins() {
