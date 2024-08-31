@@ -5,4 +5,4 @@ export dotfiles="$HOME/.dotfiles"
 export egetbin="$HOME/opt/bin/eget"
 
 ## NEEDS TO BE PROVIDED
-export condaexe=""
+export condaexe="$HOME/opt/miniconda3/bin/conda"

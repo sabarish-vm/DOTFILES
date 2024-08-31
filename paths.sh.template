@@ -1,0 +1,12 @@
+## COPY THIS FILE TO paths.sh and add paths
+
+## SHOULD BE CHANGED / ONLY FOR REFERENCE
+export opt="$HOME/opt"
+export optbin="$HOME/opt/bin"
+export dotfiles="$HOME/.dotfiles"
+export egetbin="$HOME/opt/bin/eget"
+
+## EVERYTHING BELOW NEEDS TO BE PROVIDED
+## e.g. if you want to use conda,
+##	 "$condaexe" must be a full path pointing to the executable conda
+export condaexe=""

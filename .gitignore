@@ -1,2 +1,3 @@
 **/*.gen
 **/*.prv.sh
+paths.sh
