@@ -1,0 +1,19 @@
+## Do not have empty lines, empty lines must be commented
+## Start with the default prompt for searching files
+--prompt 'F> ' 
+##
+## Write a header to declare the functionality
+## --header 'CTRL-f: Switch between Files/Directories' 
+##
+## Bind ctrl-f to toggle between file and dir search
+--bind 'ctrl-f:transform:[[ ! $FZF_PROMPT =~ F ]] &&
+        echo "change-prompt(F> )+reload(fd --type file)" ||
+        echo "change-prompt(D> )+reload(fd --type directory)"' 
+##
+## Bind ctrl-h to toggle between all file and all dir search
+--bind 'ctrl-h:transform:[[ ! $FZF_PROMPT =~ HF ]] && 
+        echo "change-prompt(HF> )+reload(fd --type file --hidden)" ||
+        echo "change-prompt(HD> )+reload(fd --type directory --hidden)"' 
+##
+## Preview with bat if it is a file and with tree if it is a di
+--preview '[[ $FZF_PROMPT =~ "HF|F" ]] && bat --color=always {} || eza --tree -L 1 --icons --color  {} '
