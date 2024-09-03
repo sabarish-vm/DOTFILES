@@ -3,5 +3,6 @@ zvm_after_init_commands+=(
 'eval "$(fzf --zsh)" ;
 source "$DOTFILES/fzf/fzf_config.sh" ; 
 source "$DOTFILES/fzf/fzf_config.zsh" ; 
-bindkey "^X^F" fzf_recent_path')
+bindkey "^X^F" fzf_recent_path ;
+eval "$(zoxide init zsh)"')
 ZVM_VI_INSERT_ESCAPE_BINDKEY=jk

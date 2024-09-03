@@ -5,7 +5,6 @@ welcome_message=''
 source "$HOME/.dotfiles/bz-sh/init_env.sh"
 source "$HOME/.dotfiles/bz-sh/device_initialization.sh"
 
-eval "$(zoxide init zsh)"
 source "$DOTFILES/conda/conda.zsh"
 source "$DOTFILES/zsh/plugins.zsh"
 
