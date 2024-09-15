@@ -12,11 +12,11 @@ source "$DOTFILES/zsh/options.zsh"
 source "$DOTFILES/bz-sh/aliases.sh" 
 source "$DOTFILES/bz-sh/commands.sh" 
 
-source "$DOTFILES/zsh/completions.zsh"
+source "$DOTFILES/zsh/get_completions.zsh"
 
 source "$ZSH_PLUGINS_DIR/fzf-tab/fzf-tab.plugin.zsh"
 source "$DOTFILES/zsh/plugins/vi.zsh"
-source "$DOTFILES/zsh/autocomplete.zsh"
+source "$DOTFILES/zsh/completions.zsh"
 source "$DOTFILES/zsh/functions.zsh"
 
 export STARSHIP_CONFIG="$HOME/.config/starship.toml"
