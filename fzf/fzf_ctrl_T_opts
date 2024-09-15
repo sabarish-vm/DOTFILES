@@ -16,4 +16,4 @@
         echo "change-prompt(HD> )+reload(fd --type directory --hidden)"' 
 ##
 ## Preview with bat if it is a file and with tree if it is a di
---preview '[[ $FZF_PROMPT =~ "HF|F" ]] && bat --color=always {} || eza --tree -L 1 --icons --color  {} '
+--preview '[[ $FZF_PROMPT =~ "HF|F" ]] && bat --color=always {} || eza --tree -L 1 --icons --color=always  {} '
