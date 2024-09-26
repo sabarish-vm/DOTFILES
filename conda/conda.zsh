@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-if [ -f "$DOTFILES/conda/conda_init_zsh.gen" ] ; then
+if [ -f "$DOTFILES/conda/conda_init_zsh.gen" ] &&
+    [ grep '>>> conda init' "$DOTFILES/conda/conda_init_zsh.gen" ] ; then
     source "$DOTFILES/conda/conda_init_zsh.gen"
 else 
     if [ -f "$DOTFILES/conda/conda_path.gen" ] ; then 
