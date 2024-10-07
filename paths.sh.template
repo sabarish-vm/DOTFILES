@@ -4,7 +4,7 @@
 export opt="$HOME/opt"
 export optbin="$HOME/opt/bin"
 export dotfiles="$HOME/.dotfiles"
-export egetbin="$HOME/opt/bin/eget"
+export egetbin="$HOME/opt/eget/bin"
 
 ## EVERYTHING BELOW NEEDS TO BE PROVIDED
 ## e.g. if you want to use conda,

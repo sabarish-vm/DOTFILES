@@ -1,8 +1,8 @@
 export LANG="en_US.UTF-8"
 export DOTFILES="$HOME/.dotfiles"
 export PATH="$HOME/opt/bin/:$PATH"
-export PATH="$HOME/opt/bin/eget/:$PATH"
-export EGET_BIN="$HOME/opt/bin/eget"
+export PATH="$HOME/opt/eget/bin:$PATH"
+export EGET_BIN="$HOME/opt/eget/bin"
 
 devname=$(cat "$HOME/.device_name") &>/dev/null  && export DEVICE_NAME="$devname" || {printf "%s" "$HOME/.device_name file missing" ;
     exec zsh -l -f ; 
