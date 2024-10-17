@@ -32,9 +32,6 @@ alias rm='rm -i'
 #alias vzsh='(ZDOTDIR=$HOME/.myshell/zsh_vanilla zsh -i -d)'
 
 ####################################
-alias curconv='currency_converter'
-
-####################################
 alias cl='clear'
 alias gst='git status'
 alias br='broot'
