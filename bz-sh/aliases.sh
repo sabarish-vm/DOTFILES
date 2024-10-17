@@ -42,3 +42,4 @@ alias me="[[  0 != \$(squeue --me | tail -n +2 | wc -l) ]] && paste -d '        
 alias jobcancelz="(me) | tail -n +2 |fzf -m --border --height 40% | awk '{print \$1}' | xargs -r -n 1 scancel"
 alias jobcd='cd $((me) | tail -n +2 |fzf --border --height 40% | awk '\''{print $6}'\'')'
 alias jobdata='(me) | tail -n +2 |fzf -m --border --height 40% | awk '\''{printf("%s""/data"),$6}'\'' | xargs -r -n 1 ls'
+alias jobqueue="squeue --me -o '%i %.4C %.2t %.9M %.8N'"
