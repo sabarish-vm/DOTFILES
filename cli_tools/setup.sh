@@ -1,9 +1,11 @@
 #!/usr/bin/env sh
 
 [ -f "$DOTFILES/paths.sh" ] && . "$DOTFILES/paths.sh" || {
-    echo "Setup paths.sh file" ; exit ; }
+    echo "Setup paths.sh file"
+    exit
+}
 
-path="$HOME/opt/cli_manager"
+path="$DOT_OPT/cli_manager"
 git clone https://github.com/sabarish-vm/cli_manager.git "${path}"
 
 platform="$(uname -s | tr '[:upper:]' '[:lower:]')"

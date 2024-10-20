@@ -1,8 +1,13 @@
 #!/usr/bin/env sh
 
-[ -z "$DOTFILES" ] && { export DOTFILES="$HOME/.dotfiles"; }
-. "$DOTFILES/paths.sh"
-mkdir -p "$egetbin"
+[ -f "$DOTFILES/paths.sh" ] && . "$DOTFILES/paths.sh" || {
+    echo "Setup paths.sh file"
+    exit
+}
+mkdir -p "$DOT_OPT"
+mkdir -p "$DOT_OPTBIN"
+mkdir -p "$EGET_BIN"
+mkdir -p "$ZSH_PLUGINS_DIR"
 
 link() {
     linkerFile="$1"

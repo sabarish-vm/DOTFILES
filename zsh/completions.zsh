@@ -5,6 +5,8 @@ _comp_options+=(globdots)   # With hidden files
 setopt MENU_COMPLETE        # Automatically highlight first element of completion menu
 setopt AUTO_LIST
 
+zstyle ':completion:*' use-cache 1
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
 # # Define completers
 zstyle ':completion:*' list-prompt   ''
 zstyle ':completion:*' select-prompt ''

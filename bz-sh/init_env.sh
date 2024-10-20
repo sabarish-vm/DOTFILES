@@ -1,13 +1,14 @@
 ## THIS FILE CONTAINS ONLY IMPORTANT EXPORTS
-export DOTFILES="$HOME/.dotfiles"
+. $HOME/.dotfiles/paths.sh
 export LANG="en_US.UTF-8"
-. "$DOTFILES/paths.sh"
-export PATH="$optbin:$PATH"
-export EGET_BIN="$egetbin"
+export PATH="$DOT_OPTBIN:$PATH"
 export PATH="$EGET_BIN:$PATH"
 
 devname=$(cat "$HOME/.device_name") &>/dev/null && export DEVICE_NAME="$devname" ||
-    { printf "%s" "$HOME/.device_name file missing"; exit; }
+    {
+        printf "%s" "$HOME/.device_name file missing"
+        exit
+    }
 
 platform="$(uname -s | tr '[:upper:]' '[:lower:]')"
 

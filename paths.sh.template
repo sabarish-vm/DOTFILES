@@ -1,13 +1,13 @@
 ## COPY THIS FILE TO paths.sh and add paths
 
 ## Changing DOTFILES path might break soemthing, use with caution
-dotfiles="$HOME/.dotfiles"
+export DOTFILES="$HOME/.dotfiles"
 ## CAN BE CHANGED / VALUES ONLY FOR REFERENCE
-opt="$HOME/opt"
-optbin="$HOME/opt/bin"
-egetbin="$HOME/opt/eget/bin"
+export DOT_OPT="$HOME/opt"
+export DOT_OPTBIN="$HOME/opt/bin"
+export EGET_BIN="$HOME/opt/eget/bin"
 
 ## EVERYTHING BELOW NEEDS TO BE PROVIDED
 ## e.g. if you want to use conda,
-##	 "$condaexe" must be a full path pointing to the executable conda
-export condaexe=""
+##	 "DOT_CONDAEXE" must be a full path pointing to the executable conda
+export DOT_CONDAEXE=""
