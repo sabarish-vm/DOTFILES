@@ -10,6 +10,13 @@ link() {
     sourceFile="$(echo "$sourceFile" | sed "s#\$DOTFILES#$DOTFILES#g")"
     targetFile="$(head "${linkerFile}" | awk -F '==' '{ printf $2 }')"
     targetFile="$(echo "$targetFile" | sed "s#\$HOME#$HOME#g")"
+    if [ -f "$targetFile" ]; then
+        echo "Target file ($targetFile) exists. Do you want to remove and replace it ? (y/N)"
+        read -r choice
+        if [ "$choice" == "y" ] || [ "$choice" == "Y" ]; then
+            rm "$targetFile"
+        fi
+    fi
     var="ln -s ${sourceFile} ${targetFile}"
     echo "$var"
     eval "$var"
