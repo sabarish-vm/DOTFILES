@@ -13,7 +13,7 @@ link() {
     if [ -f "$targetFile" ]; then
         echo "Target file ($targetFile) exists. Do you want to remove and replace it ? (y/N)"
         read -r choice
-        if [ "$choice" == "y" ] || [ "$choice" == "Y" ]; then
+        if [ "$choice" = "y" ] || [ "$choice" = "Y" ]; then
             rm "$targetFile"
         fi
     fi
@@ -38,10 +38,36 @@ zsh_ins() {
 }
 
 all() {
-    cli_manager_ins
     conda_ins
+    cli_manager_ins
     zsh_ins
 }
+
+linker() {
+    if [ "$1" = "a" ] || [ "$1" = "A" ] || [ "$1" = "all" ] || [ "$1" = "ALL" ]; then
+        local var="$(find . -name "*linker" -print0 | tr '\0' '\n')"
+        for i in $var; do
+            link "$i"
+        done
+    else
+        local var="$(find . -name "*${1}*linker" -print0 | tr '\0' '\n')"
+        for i in $var; do
+            link "$i"
+        done
+    fi
+}
+
+help() {
+    echo "--conda        Setup conda init files and condarc"
+    echo "--cli_manager  Setup a cli_manager directory"
+    echo "--zsh          Setup zsh rc"
+    echo "--all          Setup all the above in the same order as above"
+    echo "--link <ARG>   Setup the links for <ARG>."
+    echo "               Use a or all for setting up all links"
+    echo "               Use the module name in place of <ARG> to setup that particular one"
+    echo "               e.g. --link zsh to setup the zshrc link"
+}
+
 while [ "$#" -gt 0 ]; do
     case "$1" in
     --conda)
@@ -59,6 +85,15 @@ while [ "$#" -gt 0 ]; do
     --all)
         all
         exit 0
+        ;;
+    --link)
+        tolink="$2"
+        linker "$tolink"
+        shift 2
+        ;;
+    -h | --help)
+        help
+        shift 1
         ;;
     *)
         exit 1
