@@ -6,6 +6,7 @@ export DOTFILES="$HOME/.dotfiles"
 export DOT_OPT="$HOME/opt"
 export DOT_OPTBIN="$HOME/opt/bin"
 export EGET_BIN="$HOME/opt/eget/bin"
+export ZSH_PLUGINS_DIR="$HOME/.zsh_plugins/"
 
 ## EVERYTHING BELOW NEEDS TO BE PROVIDED
 ## e.g. if you want to use conda,
