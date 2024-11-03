@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+normal=$(grep -E '^Host [A-Za-z0-9]' $HOME/.ssh/config | awk '{ print $2 }' | grep -E -v '\*')
+wildc=$(grep -E '^Host [A-Za-z0-9]' $HOME/.ssh/config | awk '{ print $2 }' | grep -E '\*')
+expanded=$(echo "$wildc" | xargs -I{} grep {} $HOME/.ssh/known_hosts | awk '{print $1}' | uniq)
+echo "$normal"
+echo "$expanded"
+# fzf --preview 'echo {};awk -v var={} "{
+# if(match(\$0,/^Host var/)) { inside=\"1\";print;next }
+#     if(inside) {
+#         if(match(\$0,/^Host [A-Za-z0-9]/)) {inside=\"\";next}
+#         else {print;next}
+#         }
+#     }" $HOME/.ssh/config'

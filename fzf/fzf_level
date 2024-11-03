@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+prompt="$1"
+motion="$2"
+echo "$prompt" | grep -q 'D' && fdtype='d' || fdtype='f'
+clevel="${prompt/*L/}"
+clevel="${clevel:0:1}"
+part1="${prompt/L*/}"
+newlevel=""
+case "$clevel" in
+1)
+    if [ "$motion" == "up" ]; then
+        newlevel=2
+        fd_cmd="fd --type $fdtype $newlevel ."
+    elif [ "$motion" == "down" ]; then
+        newlevel=*
+        fd_cmd="fd --type $fdtype ."
+    fi
+    ;;
+2)
+    if [ "$motion" == "up" ]; then
+        newlevel=3
+        fd_cmd="fd --type $fdtype -d $newlevel ."
+    elif [ "$motion" == "down" ]; then
+        newlevel=1
+        fd_cmd="fd --type $fdtype -d $newlevel ."
+    fi
+    ;;
+3)
+    if [ "$motion" == "up" ]; then
+        newlevel=4
+        fd_cmd="fd --type $fdtype -d $newlevel ."
+    elif [ "$motion" == "down" ]; then
+        newlevel=2
+        fd_cmd="fd --type $fdtype -d $newlevel ."
+    fi
+    ;;
+4)
+    if [ "$motion" == "up" ]; then
+        newlevel=*
+        fd_cmd="fd --type $fdtype ."
+    elif [ "$motion" == "down" ]; then
+        newlevel=3
+        fd_cmd="fd --type $fdtype -d $newlevel ."
+    fi
+    ;;
+*)
+    if [ "$motion" == "up" ]; then
+        newlevel=1
+        fd_cmd="fd --type $fdtype -d $newlevel ."
+    elif [ "$motion" == "down" ]; then
+        newlevel=4
+        fd_cmd="fd --type $fdtype -d $newlevel ."
+    fi
+    ;;
+esac
+
+echo "change-prompt(${part1}L${newlevel})+reload($fd_cmd \$dir)"
