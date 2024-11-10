@@ -28,8 +28,8 @@ _fzf_comprun() {
             --bind "ctrl-i:transform:[[ ! \$FZF_PROMPT =~ U ]] &&
         echo 'change-prompt(UD>L2)+reload(fd -t d --unrestricted . $dir)' ||
         echo 'change-prompt(D>L2)+reload(fd -t d . $dir)'" \
-            --bind "shift-up:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT up" \
-            --bind "shift-down:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT down" \
+            --bind "shift-up:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT up $dir" \
+            --bind "shift-down:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT down $dir" \
             --preview \
             'eza --tree -L 1 --icons --group-directories-first --color=always {}'
         ;;
@@ -45,8 +45,8 @@ _fzf_comprun() {
             --bind "ctrl-i:transform:[[ ! \$FZF_PROMPT =~ UF ]] && 
             echo 'change-prompt(UF>L2 )+reload(fd --type file --unrestricted . $dir)' ||
             echo 'change-prompt(UD>L2 )+reload(fd --type directory --unrestricted . $dir)'" \
-            --bind "shift-up:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT up" \
-            --bind "shift-down:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT down" \
+            --bind "shift-up:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT up $dir" \
+            --bind "shift-down:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT down $dir" \
             --preview '[[ $FZF_PROMPT =~ "HF|UF|F" ]] &&
             bat --color=always {} ||
             eza --tree -L 1 --icons --color=always  {}'

@@ -2,6 +2,7 @@
 
 prompt="$1"
 motion="$2"
+dir="$3"
 echo "$prompt" | grep -q 'D' && fdtype='d' || fdtype='f'
 clevel="${prompt/*L/}"
 clevel="${clevel:0:1}"
@@ -55,4 +56,4 @@ case "$clevel" in
     ;;
 esac
 
-echo "change-prompt(${part1}L${newlevel})+reload($fd_cmd \$dir)"
+echo "change-prompt(${part1}L${newlevel})+reload($fd_cmd $dir)"
