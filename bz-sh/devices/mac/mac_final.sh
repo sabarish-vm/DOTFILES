@@ -1,1 +1,1 @@
-conda activate default
+micromamba activate def
