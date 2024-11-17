@@ -36,6 +36,8 @@ alias cl='clear'
 alias gst='git status'
 alias br='broot'
 alias lg='lazygit'
+alias mm='micromamba'
+alias mma='micromamba activate'
 
 #################################### HPC stuff
 alias me="[[  0 != \$(squeue --me | tail -n +2 | wc -l) ]] && paste -d '         ' <(jobqueue) <( echo 'WorkDir'; jobqueue | tail -n +2 | awk '{print \$1}' | xargs -n 1 scontrol show job | rg 'WorkDir=(.*)' -or '\$1' | xargs realpath ) || echo 'No running jobs'"
