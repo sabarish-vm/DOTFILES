@@ -12,5 +12,6 @@ export ZSH_PLUGINS_DIR="$HOME/.zsh_plugins/"
 ## e.g. if you want to use conda,
 ##	 "DOT_CONDAEXE" must be a full path pointing to the executable conda
 export DOT_CONDAEXE=""
+## If it is empty, conda will not be setup
 ## PATH to the directory where mamba manages packages
 export DOT_MAMBA_DIR=""
