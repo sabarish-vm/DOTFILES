@@ -11,46 +11,46 @@ newlevel=""
 case "$clevel" in
 1)
     if [ "$motion" == "up" ]; then
-        newlevel=2
-        fd_cmd="fd --type $fdtype $newlevel ."
+        newlevel="2 "
+        fd_cmd="fd --type $fdtype -d $newlevel ."
     elif [ "$motion" == "down" ]; then
-        newlevel=*
+        newlevel="* "
         fd_cmd="fd --type $fdtype ."
     fi
     ;;
 2)
     if [ "$motion" == "up" ]; then
-        newlevel=3
+        newlevel="3 "
         fd_cmd="fd --type $fdtype -d $newlevel ."
     elif [ "$motion" == "down" ]; then
-        newlevel=1
+        newlevel="1 "
         fd_cmd="fd --type $fdtype -d $newlevel ."
     fi
     ;;
 3)
     if [ "$motion" == "up" ]; then
-        newlevel=4
+        newlevel="4 "
         fd_cmd="fd --type $fdtype -d $newlevel ."
     elif [ "$motion" == "down" ]; then
-        newlevel=2
+        newlevel="2 "
         fd_cmd="fd --type $fdtype -d $newlevel ."
     fi
     ;;
 4)
     if [ "$motion" == "up" ]; then
-        newlevel=*
+        newlevel="* "
         fd_cmd="fd --type $fdtype ."
     elif [ "$motion" == "down" ]; then
-        newlevel=3
+        newlevel="3 "
         fd_cmd="fd --type $fdtype -d $newlevel ."
     fi
     ;;
 *)
     if [ "$motion" == "up" ]; then
-        newlevel=1
+        newlevel="1 "
         fd_cmd="fd --type $fdtype -d $newlevel ."
     elif [ "$motion" == "down" ]; then
-        newlevel=4
+        newlevel="4 "
         fd_cmd="fd --type $fdtype -d $newlevel ."
     fi
     ;;
