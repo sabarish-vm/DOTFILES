@@ -17,7 +17,9 @@ export ZSH_PLUGINS_DIR="$HOME/.zsh_plugins/"
 ##   bool must be set to true and "DOT_CONDAEXE" must be a full path
 ##   pointing to the executable conda
 false && export DOT_CONDAEXE=""
-## use micromamba and point to micromamba executable
-false && export DOT_MAMBA=""
+## use micromamba
+## path to the directory where micromamba stores and manages envs
+## ensure that micromamba executable is in the path
+false && export DOT_MAMBA_DIR=""
 ## Change socket directory for zellij
 false && export ZELLIJ_SOCKET_DIR=""
