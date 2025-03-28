@@ -1,6 +1,6 @@
 ## COPY THIS FILE TO paths.sh and add paths
 
-## Changing DOTFILES path might break soemthing, use with caution
+## Changing DOTFILES path might break something, use with caution
 export DOTFILES="$HOME/.dotfiles"
 ## CAN BE CHANGED / VALUES ONLY FOR REFERENCE
 export DOT_OPT="$HOME/opt"
@@ -9,9 +9,15 @@ export EGET_BIN="$HOME/opt/eget/bin"
 export ZSH_PLUGINS_DIR="$HOME/.zsh_plugins/"
 
 ## EVERYTHING BELOW NEEDS TO BE PROVIDED
+## The syntax is as follows,
+##          bool && export <VARIABLE>=<VALUE>
+## If the export needs to be done set the bool to true and add the
+## variable and value accordingly
 ## e.g. if you want to use conda,
-##	 "DOT_CONDAEXE" must be a full path pointing to the executable conda
-export DOT_CONDAEXE=""
-## If it is empty, conda will not be setup
-## PATH to the directory where mamba manages packages
-export DOT_MAMBA_DIR=""
+##   bool must be set to true and "DOT_CONDAEXE" must be a full path
+##   pointing to the executable conda
+false && export DOT_CONDAEXE=""
+## use micromamba and point to micromamba executable
+false && export DOT_MAMBA=""
+## Change socket directory for zellij
+false && export ZELLIJ_SOCKET_DIR=""
