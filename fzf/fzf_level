@@ -4,6 +4,7 @@ prompt="$1"
 motion="$2"
 dir="$3"
 echo "$prompt" | grep -q 'D' && fdtype='d' || fdtype='f'
+echo "$prompt" | grep -q 'U' && untracked='-u' || untracked=''
 clevel="${prompt/*L/}"
 clevel="${clevel:0:1}"
 part1="${prompt/L*/}"
@@ -12,46 +13,46 @@ case "$clevel" in
 1)
     if [ "$motion" == "up" ]; then
         newlevel="2 "
-        fd_cmd="fd --type $fdtype -d $newlevel ."
+        fd_cmd="fd --type $fdtype $untracked -d $newlevel ."
     elif [ "$motion" == "down" ]; then
         newlevel="* "
-        fd_cmd="fd --type $fdtype ."
+        fd_cmd="fd --type $fdtype $untracked ."
     fi
     ;;
 2)
     if [ "$motion" == "up" ]; then
         newlevel="3 "
-        fd_cmd="fd --type $fdtype -d $newlevel ."
+        fd_cmd="fd --type $fdtype $untracked -d $newlevel ."
     elif [ "$motion" == "down" ]; then
         newlevel="1 "
-        fd_cmd="fd --type $fdtype -d $newlevel ."
+        fd_cmd="fd --type $fdtype $untracked -d $newlevel ."
     fi
     ;;
 3)
     if [ "$motion" == "up" ]; then
         newlevel="4 "
-        fd_cmd="fd --type $fdtype -d $newlevel ."
+        fd_cmd="fd --type $fdtype $untracked -d $newlevel ."
     elif [ "$motion" == "down" ]; then
         newlevel="2 "
-        fd_cmd="fd --type $fdtype -d $newlevel ."
+        fd_cmd="fd --type $fdtype $untracked -d $newlevel ."
     fi
     ;;
 4)
     if [ "$motion" == "up" ]; then
         newlevel="* "
-        fd_cmd="fd --type $fdtype ."
+        fd_cmd="fd --type $fdtype $untracked ."
     elif [ "$motion" == "down" ]; then
         newlevel="3 "
-        fd_cmd="fd --type $fdtype -d $newlevel ."
+        fd_cmd="fd --type $fdtype $untracked -d $newlevel ."
     fi
     ;;
 *)
     if [ "$motion" == "up" ]; then
         newlevel="1 "
-        fd_cmd="fd --type $fdtype -d $newlevel ."
+        fd_cmd="fd --type $fdtype $untracked -d $newlevel ."
     elif [ "$motion" == "down" ]; then
         newlevel="4 "
-        fd_cmd="fd --type $fdtype -d $newlevel ."
+        fd_cmd="fd --type $fdtype $untracked -d $newlevel ."
     fi
     ;;
 esac
