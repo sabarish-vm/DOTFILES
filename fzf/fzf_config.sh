@@ -42,7 +42,7 @@ _fzf_comprun() {
             --bind "ctrl-h:transform:[[ ! \$FZF_PROMPT =~ HF ]] && 
             echo 'change-prompt(HF>L2 )+reload(fd --type file --hidden . $dir)' ||
             echo 'change-prompt(HD>L2 )+reload(fd --type directory --hidden . $dir)'" \
-            --bind "ctrl-i:transform:[[ ! \$FZF_PROMPT =~ UF ]] && 
+            --bind "ctrl-o:transform:[[ ! \$FZF_PROMPT =~ UF ]] && 
             echo 'change-prompt(UF>L2 )+reload(fd --type file --unrestricted . $dir)' ||
             echo 'change-prompt(UD>L2 )+reload(fd --type directory --unrestricted . $dir)'" \
             --bind "shift-up:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT up $dir" \
