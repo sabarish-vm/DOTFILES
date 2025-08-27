@@ -35,7 +35,7 @@ _fzf_comprun() {
         ;;
 
     *)
-        fd -t f '.' "$dir" | fzf --prompt 'F>L2 ' \
+        fd -t f '.' "$dir" | fzf -m --prompt 'F>L2 ' \
             --bind "ctrl-f:transform:[[ ! \$FZF_PROMPT =~ F ]] &&
             echo 'change-prompt(F>L2 )+reload(fd --type file . $dir)' ||
             echo 'change-prompt(D>L2 )+reload(fd --type directory . $dir)'" \
