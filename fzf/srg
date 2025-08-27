@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# srg ≣ Stacked ripgrep
+# Sabarish 2023
+# Stacked ripgrep stacks ripgrep searches, i.e.
+#         srg "s1 s2"
+# first searches for files containing 's1' and in the resulting list of files it searches for 's2'
+
+# Set some defaults
+globpars='*'
+list_only=''
+
+# Argparsing
+while [ "$#" -gt 0 ]; do
+    case "$1" in
+    -g | --glob)
+        globpars="$2"
+        shift 2
+        ;;
+    -l | --list)
+        list_only="True"
+        shift
+        ;;
+    *)
+        string="$1"
+        shift
+        ;;
+    esac
+done
+
+# Set the IFS to space
+IFS=' '
+# Use read to split the string into an array
+read -ra myvar <<<"$string"
+
+# rg through files with some specific extensions if needed
+if [ "$globpars" = '*' ]; then
+    var="rg -l -i  ${myvar[0]}"
+else
+    var="rg -l -i -g \"*.{$globpars}\" ${myvar[0]}"
+fi
+
+# repeatedly filter using for loop
+for i in ${myvar[@]:1}; do
+    var="${var}| xargs rg -i -l ${i} "
+done
+if [ -z "$list_only" ]; then
+    eval "$var"
+else
+    all="rg -i"
+    for i in ${myvar[@]:1}; do
+        all="${all} -e ${i}"
+    done
+    eval "$all"
+fi

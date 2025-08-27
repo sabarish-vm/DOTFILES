@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+## 1. Search for text in files using Ripgrep
+## 2. Interactively restart Ripgrep with reload action
+## 3. Echo the file
+
+RG_PREFIX="rg --column --line-number --no-heading --color=always -i "
+INITIAL_QUERY=".*"
+ARGS="${@}"
+selected=($(
+    FZF_DEFAULT_COMMAND="$RG_PREFIX $(printf %q "$INITIAL_QUERY") $ARGS" \
+        fzf --ansi \
+        --height 40% \
+        --disabled --query "$INITIAL_QUERY" \
+        --bind "change:reload:sleep 0.1; $RG_PREFIX {q} $ARGS || true" \
+        --delimiter : \
+        --preview 'bat --color=always {1} --highlight-line {2}' \
+        --preview-window 'left,50%,border-bottom,+{2}+3/3,~3'
+))
+[ -n "${selected[0]}" ] && echo " $(realpath ${selected[0]})"
