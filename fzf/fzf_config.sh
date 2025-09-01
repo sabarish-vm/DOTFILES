@@ -21,13 +21,13 @@ _fzf_comprun() {
         ;;
 
     cd | z | mkdir)
-        fd -t d '.' "$dir" | fzf --prompt 'D>L2' \
+        fd -t d -d 2 '.' "$dir" | fzf --prompt 'D>L2' \
             --bind "ctrl-h:transform:[[ ! \$FZF_PROMPT =~ H ]] &&
-        echo 'change-prompt(HD>L2)+reload(fd -t d --hidden . $dir)' ||
-        echo 'change-prompt(D>L2)+reload(fd -t d . $dir)'" \
+        echo 'change-prompt(HD>L2)+reload(fd -t d -d 2 --hidden . $dir)' ||
+        echo 'change-prompt(D>L2)+reload(fd -t d  -d 2 . $dir)'" \
             --bind "ctrl-i:transform:[[ ! \$FZF_PROMPT =~ U ]] &&
-        echo 'change-prompt(UD>L2)+reload(fd -t d --unrestricted . $dir)' ||
-        echo 'change-prompt(D>L2)+reload(fd -t d . $dir)'" \
+        echo 'change-prompt(UD>L2)+reload(fd -t d -d 2  --unrestricted . $dir)' ||
+        echo 'change-prompt(D>L2)+reload(fd -t d -d 2  . $dir)'" \
             --bind "shift-up:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT up $dir" \
             --bind "shift-down:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT down $dir" \
             --preview \
@@ -35,16 +35,16 @@ _fzf_comprun() {
         ;;
 
     *)
-        fd -t f '.' "$dir" | fzf -m --prompt 'F>L2 ' \
+        fd -t f -d 2 '.' "$dir" | fzf -m --prompt 'F>L2 ' \
             --bind "ctrl-f:transform:[[ ! \$FZF_PROMPT =~ F ]] &&
-            echo 'change-prompt(F>L2 )+reload(fd --type file . $dir)' ||
-            echo 'change-prompt(D>L2 )+reload(fd --type directory . $dir)'" \
+            echo 'change-prompt(F>L2 )+reload(fd --type file -d 2  . $dir)' ||
+            echo 'change-prompt(D>L2 )+reload(fd --type directory -d 2  . $dir)'" \
             --bind "ctrl-h:transform:[[ ! \$FZF_PROMPT =~ HF ]] && 
-            echo 'change-prompt(HF>L2 )+reload(fd --type file --hidden . $dir)' ||
-            echo 'change-prompt(HD>L2 )+reload(fd --type directory --hidden . $dir)'" \
+            echo 'change-prompt(HF>L2 )+reload(fd --type file -d 2  --hidden . $dir)' ||
+            echo 'change-prompt(HD>L2 )+reload(fd --type directory -d 2  --hidden . $dir)'" \
             --bind "ctrl-o:transform:[[ ! \$FZF_PROMPT =~ UF ]] && 
-            echo 'change-prompt(UF>L2 )+reload(fd --type file --unrestricted . $dir)' ||
-            echo 'change-prompt(UD>L2 )+reload(fd --type directory --unrestricted . $dir)'" \
+            echo 'change-prompt(UF>L2 )+reload(fd --type file -d 2  --unrestricted . $dir)' ||
+            echo 'change-prompt(UD>L2 )+reload(fd --type directory -d 2  --unrestricted . $dir)'" \
             --bind "shift-up:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT up $dir" \
             --bind "shift-down:transform:$HOME/.dotfiles/fzf/fzf_level \$FZF_PROMPT down $dir" \
             --preview '[[ $FZF_PROMPT =~ "HF|UF|F" ]] &&
