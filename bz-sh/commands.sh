@@ -11,6 +11,9 @@ gfd() { cd "$(fzf -e --bind 'enter:become(dirname {})')"; }
 mat2py() {
     python -c "from sympy.parsing.mathematica import parse_mathematica;expr=parse_mathematica(""'""${1}""'"") ;print();print(expr)"
 }
+fileopen() {
+    fd "$1" "$HOME" | fzf -e --bind 'enter:become(open {})'
+}
 
 ###########################################################################################
 
@@ -36,4 +39,18 @@ makeit() {
     make clean
     make -j
     cd "$cwd"
+}
+
+##
+
+hummelcopy() {
+    remotepath="$1"
+    localpath=$(echo "$remotepath" | sed 's#/beegfs/u/bbc3945#/Users/sabarish/hummel#g')
+    cp -p -i "$localpath" "$2"
+}
+
+##
+
+vim() {
+    command -v nvim &>/dev/null && nvim "$@" || vim "$@"
 }
