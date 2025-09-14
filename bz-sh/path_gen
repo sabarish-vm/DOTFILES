@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Script to generate paths as a string that needs to be added to the env
+# Add the paths in new lines and the script will automatically append
+# them to the path
+# !!!!!! Ensure that the path does not contain spaces !!!!
+
+paths="$1"
+IFS='
+'
+for path in $paths; do
+    stack="${path}:$stack"
+done
+echo "$stack"
