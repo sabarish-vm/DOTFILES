@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+_getweather() {
+    echo ""
+    for loc in "$@"; do
+        curl -s wttr.in/"$loc"\?format="%l:+%c,+%t,+%h,+Feels+like=%f,+UV=%u"
+        echo ""
+    done
+}
+
+if [[ "$#" -eq 0 ]]; then
+    _getweather Hamburg
+fi
+
+while [[ "$#" -gt 0 ]]; do
+    case "$1" in
+    -a)
+        _getweather Hamburg Boston Geneva Chennai Mayiladuthurai Madurai Wellington
+        shift 1
+        ;;
+    -l)
+        shift 1
+        _getweather "$@"
+        shift 1
+        ;;
+    *)
+        exit
+        ;;
+    esac
+done

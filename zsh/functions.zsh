@@ -7,3 +7,12 @@ fzf_recent_path() {
     # zle zvm_exit_insert_mode
 }
 zle -N fzf_recent_path
+
+pet_search_paste() {
+    res="$(pet search)"
+    LBUFFER="$res"
+    zle zvm_exit_insert_mode
+    zle zvm_append_eol
+}
+
+zle -N pet_search_paste
