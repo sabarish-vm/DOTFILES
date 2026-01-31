@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# this is a macOS only script
+osascript -e "set the clipboard to (POSIX file \"$(realpath $1)\")"
