@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+file="$WEZTERM_CONFIG_FILE"
+sedcmd="/Users/sabarish/opt/bin/sed"
+"$sedcmd" -i -E "s#config.color_scheme = .*#config.color_scheme = \"$1\"#" "$file"

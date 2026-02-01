@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+file="$WEZTERM_CONFIG_FILE"
+list="$WEZTERM_CONFIG_DIR/data/colorthemes.txt"
+current="$(sed -E -n 's#config\.color.*\"(.*)\"#\1#p' $file)"
+
+selected=""
+selected=$(cat "$list" | /opt/homebrew/bin/fzf --color=gutter:-1,bg+:-1 --reverse --preview-window=down,1 --preview='/Users/sabarish/.config/wezterm/scripts/switcher {}')
+
+if [ -n "$selected" ]; then
+    :
+else
+    /Users/sabarish/.config/wezterm/scripts/switcher "$current"
+fi
