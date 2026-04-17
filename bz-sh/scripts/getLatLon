@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+address=$(echo "$1" | tr ' ' '+')
+curl -s "https://nominatim.openstreetmap.org/search?q=${address}&format=json" | jq '.[0] | {lat:.lat,lon:.lon}'
