@@ -27,3 +27,10 @@ fuzzy_env() {
         LBUFFER+="$file"
 }
 zle -N fuzzy_env
+
+go_one_level_up() {
+    cd ..
+    zle reset-prompt
+}
+
+zle -N go_one_level_up
