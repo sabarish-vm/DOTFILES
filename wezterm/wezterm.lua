@@ -9,7 +9,7 @@ local themes = require("colorthemes")
 local ssh_opts = require("ssh")
 local resurrect = require("resurrect")
 local status = require("status")
-require("cli_commands")
+require("wezrun")
 
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 
