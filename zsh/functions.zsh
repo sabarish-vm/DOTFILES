@@ -16,3 +16,14 @@ pet_search_paste() {
 }
 
 zle -N pet_search_paste
+
+fuzzy_env() {
+        file="$(env | fzf --reverse --height=100% --border=sharp --wrap --gap \
+        --info=inline -d= \
+        --bind 'ctrl-j:become(echo \${1})'\
+        --bind 'ctrl-k:become(echo {2..})'\
+        --bind 'enter:best'\
+        )"
+        LBUFFER+="$file"
+}
+zle -N fuzzy_env

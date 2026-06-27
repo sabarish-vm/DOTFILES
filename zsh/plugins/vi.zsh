@@ -3,7 +3,8 @@ zvm_after_init_commands+=(
 'source <(fzf --zsh) ;
 source "$DOTFILES/fzf/fzf_config.sh" ;
 source "$DOTFILES/fzf/fzf_config.zsh" ;
-bindkey "^X^F" fzf_recent_path ;
+bindkey "^X^P" fzf_recent_path ;
+bindkey "^X^V" fuzzy_env ;
 bindkey "^X^H" pet_search_paste ;
 bindkey -r "^B" ;
 eval "$(zoxide init zsh)"')
