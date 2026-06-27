@@ -1,3 +1,4 @@
 **/*.gen
 **/*.prv.sh
 paths.sh
+zsh/completions
