@@ -2,7 +2,7 @@
 . $HOME/.dotfiles/paths.sh
 export LANG="en_US.UTF-8"
 export PATH="$DOT_OPTBIN:$PATH"
-export PATH="$EGET_BIN:$PATH"
+export PATH="$BINMGR_BIN:$EGET_BIN:$PATH"
 
 devname=$(cat "$HOME/.device_name") &>/dev/null && export DEVICE_NAME="$devname" ||
     {
