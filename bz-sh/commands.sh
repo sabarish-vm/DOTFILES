@@ -51,6 +51,18 @@ hummelcopy() {
 
 ##
 
-vim() {
-    command -v nvim &>/dev/null && nvim "$@" || vim "$@"
+nvim() {
+    if [[ "${TERM_PROGRAM}" =~ [Ww].* ]]; then
+        TERM=wezterm command nvim "$@"
+    else
+        command nvim "$@"
+    fi
+}
+
+pixienv() {
+    pixi "$@" -m "${DOT_OPT}/pixienvs/"
+}
+
+wezrun() {
+    printf "\033]1337;SetUserVar=%s=%s\007" "RUNCMD_NEWTAB" "$(echo -n $(which ${1}) ${@:2} | base64)"
 }
