@@ -2,3 +2,4 @@
 **/*.prv.sh
 paths.sh
 zsh/completions
+wezterm/ssh.lua
