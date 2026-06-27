@@ -1,0 +1,35 @@
+matches:
+  # Print the current date
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  - trigger: ":calc:"
+    replace: "{{solved}}"
+    vars:
+      - name: "input"
+        type: "form"
+        params:
+          layout: |
+            [[val]]
+      - name: "solved"
+        type: shell
+        params:
+          cmd: "numbat -N -e '{{input.val}}'"
+
+  - trigger: ":conv:"
+    replace: "{{solved}}"
+    vars:
+      - name: "input"
+        type: "form"
+        params:
+          layout: |
+            [[val]]
+      - name: "solved"
+        type: shell
+        params:
+          cmd: "numbat -e '{{input.val}}' --pretty-print never"

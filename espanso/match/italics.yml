@@ -1,0 +1,414 @@
+matches:
+  - label: "Math Italic A"
+    trigger: ":itA:"
+    replace: "\U0001D434"
+    word: true
+  - label: "Math Italic B"
+    trigger: ":itB:"
+    replace: "\U0001D435"
+    word: true
+  - label: "Math Italic C"
+    trigger: ":itC:"
+    replace: "\U0001D436"
+    word: true
+  - label: "Math Italic D"
+    trigger: ":itD:"
+    replace: "\U0001D437"
+    word: true
+  - label: "Math Italic E"
+    trigger: ":itE:"
+    replace: "\U0001D438"
+    word: true
+  - label: "Math Italic F"
+    trigger: ":itF:"
+    replace: "\U0001D439"
+    word: true
+  - label: "Math Italic G"
+    trigger: ":itG:"
+    replace: "\U0001D43A"
+    word: true
+  - label: "Math Italic H"
+    trigger: ":itH:"
+    replace: "\U0001D43B"
+    word: true
+  - label: "Math Italic I"
+    trigger: ":itI:"
+    replace: "\U0001D43C"
+    word: true
+  - label: "Math Italic J"
+    trigger: ":itJ:"
+    replace: "\U0001D43D"
+    word: true
+  - label: "Math Italic K"
+    trigger: ":itK:"
+    replace: "\U0001D43E"
+    word: true
+  - label: "Math Italic L"
+    trigger: ":itL:"
+    replace: "\U0001D43F"
+    word: true
+  - label: "Math Italic M"
+    trigger: ":itM:"
+    replace: "\U0001D440"
+    word: true
+  - label: "Math Italic N"
+    trigger: ":itN:"
+    replace: "\U0001D441"
+    word: true
+  - label: "Math Italic O"
+    trigger: ":itO:"
+    replace: "\U0001D442"
+    word: true
+  - label: "Math Italic P"
+    trigger: ":itP:"
+    replace: "\U0001D443"
+    word: true
+  - label: "Math Italic Q"
+    trigger: ":itQ:"
+    replace: "\U0001D444"
+    word: true
+  - label: "Math Italic R"
+    trigger: ":itR:"
+    replace: "\U0001D445"
+    word: true
+  - label: "Math Italic S"
+    trigger: ":itS:"
+    replace: "\U0001D446"
+    word: true
+  - label: "Math Italic T"
+    trigger: ":itT:"
+    replace: "\U0001D447"
+    word: true
+  - label: "Math Italic U"
+    trigger: ":itU:"
+    replace: "\U0001D448"
+    word: true
+  - label: "Math Italic V"
+    trigger: ":itV:"
+    replace: "\U0001D449"
+    word: true
+  - label: "Math Italic W"
+    trigger: ":itW:"
+    replace: "\U0001D44A"
+    word: true
+  - label: "Math Italic X"
+    trigger: ":itX:"
+    replace: "\U0001D44B"
+    word: true
+  - label: "Math Italic Y"
+    trigger: ":itY:"
+    replace: "\U0001D44C"
+    word: true
+  - label: "Math Italic Z"
+    trigger: ":itZ:"
+    replace: "\U0001D44D"
+    word: true
+  - label: "Math Italic a"
+    trigger: ":ita:"
+    replace: "\U0001D44E"
+    word: true
+  - label: "Math Italic b"
+    trigger: ":itb:"
+    replace: "\U0001D44F"
+    word: true
+  - label: "Math Italic c"
+    trigger: ":itc:"
+    replace: "\U0001D450"
+    word: true
+  - label: "Math Italic d"
+    trigger: ":itd:"
+    replace: "\U0001D451"
+    word: true
+  - label: "Math Italic e"
+    trigger: ":ite:"
+    replace: "\U0001D452"
+    word: true
+  - label: "Math Italic f"
+    trigger: ":itf:"
+    replace: "\U0001D453"
+    word: true
+  - label: "Math Italic g"
+    trigger: ":itg:"
+    replace: "\U0001D454"
+    word: true
+  - label: "Math Italic i"
+    trigger: ":iti:"
+    replace: "\U0001D456"
+    word: true
+  - label: "Math Italic j"
+    trigger: ":itj:"
+    replace: "\U0001D457"
+    word: true
+  - label: "Math Italic k"
+    trigger: ":itk:"
+    replace: "\U0001D458"
+    word: true
+  - label: "Math Italic l"
+    trigger: ":itl:"
+    replace: "\U0001D459"
+    word: true
+  - label: "Math Italic m"
+    trigger: ":itm:"
+    replace: "\U0001D45A"
+    word: true
+  - label: "Math Italic n"
+    trigger: ":itn:"
+    replace: "\U0001D45B"
+    word: true
+  - label: "Math Italic o"
+    trigger: ":ito:"
+    replace: "\U0001D45C"
+    word: true
+  - label: "Math Italic p"
+    trigger: ":itp:"
+    replace: "\U0001D45D"
+    word: true
+  - label: "Math Italic q"
+    trigger: ":itq:"
+    replace: "\U0001D45E"
+    word: true
+  - label: "Math Italic r"
+    trigger: ":itr:"
+    replace: "\U0001D45F"
+    word: true
+  - label: "Math Italic s"
+    trigger: ":its:"
+    replace: "\U0001D460"
+    word: true
+  - label: "Math Italic t"
+    trigger: ":itt:"
+    replace: "\U0001D461"
+    word: true
+  - label: "Math Italic u"
+    trigger: ":itu:"
+    replace: "\U0001D462"
+    word: true
+  - label: "Math Italic v"
+    trigger: ":itv:"
+    replace: "\U0001D463"
+    word: true
+  - label: "Math Italic w"
+    trigger: ":itw:"
+    replace: "\U0001D464"
+    word: true
+  - label: "Math Italic x"
+    trigger: ":itx:"
+    replace: "\U0001D465"
+    word: true
+  - label: "Math Italic y"
+    trigger: ":ity:"
+    replace: "\U0001D466"
+    word: true
+  - label: "Math Italic z"
+    trigger: ":itz:"
+    replace: "\U0001D467"
+    word: true
+
+  - label: "Math Italic Alpha"
+    trigger: ":itAlpha:"
+    replace: "\U0001D6E2"
+    word: true
+  - label: "Math Italic Beta"
+    trigger: ":itBeta:"
+    replace: "\U0001D6E3"
+    word: true
+  - label: "Math Italic Gamma"
+    trigger: ":itGamma:"
+    replace: "\U0001D6E4"
+    word: true
+  - label: "Math Italic Delta"
+    trigger: ":itDelta:"
+    replace: "\U0001D6E5"
+    word: true
+  - label: "Math Italic Epsilon"
+    trigger: ":itEpsilon:"
+    replace: "\U0001D6E6"
+    word: true
+  - label: "Math Italic Zeta"
+    trigger: ":itZeta:"
+    replace: "\U0001D6E7"
+    word: true
+  - label: "Math Italic Eta"
+    trigger: ":itEta:"
+    replace: "\U0001D6E8"
+    word: true
+  - label: "Math Italic Theta"
+    trigger: ":itTheta:"
+    replace: "\U0001D6E9"
+    word: true
+  - label: "Math Italic Iota"
+    trigger: ":itIota:"
+    replace: "\U0001D6EA"
+    word: true
+  - label: "Math Italic Kappa"
+    trigger: ":itKappa:"
+    replace: "\U0001D6EB"
+    word: true
+  - label: "Math Italic Lamda"
+    trigger: ":itLamda:"
+    replace: "\U0001D6EC"
+    word: true
+  - label: "Math Italic Mu"
+    trigger: ":itMu:"
+    replace: "\U0001D6ED"
+    word: true
+  - label: "Math Italic Nu"
+    trigger: ":itNu:"
+    replace: "\U0001D6EE"
+    word: true
+  - label: "Math Italic Xi"
+    trigger: ":itXi:"
+    replace: "\U0001D6EF"
+    word: true
+  - label: "Math Italic Omicron"
+    trigger: ":itOmicron:"
+    replace: "\U0001D6F0"
+    word: true
+  - label: "Math Italic Pi"
+    trigger: ":itPi:"
+    replace: "\U0001D6F1"
+    word: true
+  - label: "Math Italic Rho"
+    trigger: ":itRho:"
+    replace: "\U0001D6F2"
+    word: true
+  - label: "Math Italic Theta Symbol"
+    trigger: ":itThetaSymbol:"
+    replace: "\U0001D6F3"
+    word: true
+  - label: "Math Italic Sigma"
+    trigger: ":itSigma:"
+    replace: "\U0001D6F4"
+    word: true
+  - label: "Math Italic Tau"
+    trigger: ":itTau:"
+    replace: "\U0001D6F5"
+    word: true
+  - label: "Math Italic Upsilon"
+    trigger: ":itUpsilon:"
+    replace: "\U0001D6F6"
+    word: true
+  - label: "Math Italic Phi"
+    trigger: ":itPhi:"
+    replace: "\U0001D6F7"
+    word: true
+  - label: "Math Italic Chi"
+    trigger: ":itChi:"
+    replace: "\U0001D6F8"
+    word: true
+  - label: "Math Italic Psi"
+    trigger: ":itPsi:"
+    replace: "\U0001D6F9"
+    word: true
+  - label: "Math Italic Omega"
+    trigger: ":itOmega:"
+    replace: "\U0001D6FA"
+    word: true
+  - label: "Math Italic Nabla"
+    trigger: ":itNabla:"
+    replace: "\U0001D6FB"
+    word: true
+  - label: "Math Italic alpha"
+    trigger: ":italpha:"
+    replace: "\U0001D6FC"
+    word: true
+  - label: "Math Italic beta"
+    trigger: ":itbeta:"
+    replace: "\U0001D6FD"
+    word: true
+  - label: "Math Italic gamma"
+    trigger: ":itgamma:"
+    replace: "\U0001D6FE"
+    word: true
+  - label: "Math Italic delta"
+    trigger: ":itdelta:"
+    replace: "\U0001D6FF"
+    word: true
+  - label: "Math Italic epsilon"
+    trigger: ":itepsilon:"
+    replace: "\U0001D700"
+    word: true
+  - label: "Math Italic zeta"
+    trigger: ":itzeta:"
+    replace: "\U0001D701"
+    word: true
+  - label: "Math Italic eta"
+    trigger: ":iteta:"
+    replace: "\U0001D702"
+    word: true
+  - label: "Math Italic theta"
+    trigger: ":ittheta:"
+    replace: "\U0001D703"
+    word: true
+  - label: "Math Italic iota"
+    trigger: ":itiota:"
+    replace: "\U0001D704"
+    word: true
+  - label: "Math Italic kappa"
+    trigger: ":itkappa:"
+    replace: "\U0001D705"
+    word: true
+  - label: "Math Italic lamda"
+    trigger: ":itlamda:"
+    replace: "\U0001D706"
+    word: true
+  - label: "Math Italic mu"
+    trigger: ":itmu:"
+    replace: "\U0001D707"
+    word: true
+  - label: "Math Italic nu"
+    trigger: ":itnu:"
+    replace: "\U0001D708"
+    word: true
+  - label: "Math Italic xi"
+    trigger: ":itxi:"
+    replace: "\U0001D709"
+    word: true
+  - label: "Math Italic omicron"
+    trigger: ":itomicron:"
+    replace: "\U0001D70A"
+    word: true
+  - label: "Math Italic pi"
+    trigger: ":itpi:"
+    replace: "\U0001D70B"
+    word: true
+  - label: "Math Italic rho"
+    trigger: ":itrho:"
+    replace: "\U0001D70C"
+    word: true
+  - label: "Math Italic final sigma"
+    trigger: ":itfinalsigma:"
+    replace: "\U0001D70D"
+    word: true
+  - label: "Math Italic sigma"
+    trigger: ":itsigma:"
+    replace: "\U0001D70E"
+    word: true
+  - label: "Math Italic tau"
+    trigger: ":ittau:"
+    replace: "\U0001D70F"
+    word: true
+  - label: "Math Italic upsilon"
+    trigger: ":itupsilon:"
+    replace: "\U0001D710"
+    word: true
+  - label: "Math Italic phi"
+    trigger: ":itphi:"
+    replace: "\U0001D711"
+    word: true
+  - label: "Math Italic chi"
+    trigger: ":itchi:"
+    replace: "\U0001D712"
+    word: true
+  - label: "Math Italic psi"
+    trigger: ":itpsi:"
+    replace: "\U0001D713"
+    word: true
+  - label: "Math Italic omega"
+    trigger: ":itomega:"
+    replace: "\U0001D714"
+    word: true
+  - label: "Math Italic partial differential"
+    trigger: ":itpartial:"
+    replace: "\U0001D715"
+    word: true

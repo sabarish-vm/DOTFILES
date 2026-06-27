@@ -1,0 +1,233 @@
+matches:
+  # NUMBERS & SYMBOLS
+  - label: "SUPERSCRIPT ZERO"
+    replace: "\u2070"
+    trigger: ":^0:"
+    word: true
+  - label: "SUPERSCRIPT ONE"
+    replace: "\u00b9"
+    trigger: ":^1:"
+    word: true
+  - label: "SUPERSCRIPT TWO"
+    replace: "\u00b2"
+    trigger: ":^2:"
+    word: true
+  - label: "SUPERSCRIPT THREE"
+    replace: "\u00b3"
+    trigger: ":^3:"
+    word: true
+  - label: "SUPERSCRIPT FOUR"
+    replace: "\u2074"
+    trigger: ":^4:"
+    word: true
+  - label: "SUPERSCRIPT FIVE"
+    replace: "\u2075"
+    trigger: ":^5:"
+    word: true
+  - label: "SUPERSCRIPT SIX"
+    replace: "\u2076"
+    trigger: ":^6:"
+    word: true
+  - label: "SUPERSCRIPT SEVEN"
+    replace: "\u2077"
+    trigger: ":^7:"
+    word: true
+  - label: "SUPERSCRIPT EIGHT"
+    replace: "\u2078"
+    trigger: ":^8:"
+    word: true
+  - label: "SUPERSCRIPT NINE"
+    replace: "\u2079"
+    trigger: ":^9:"
+    word: true
+  
+  # SUBSCRIPT NUMBERS
+  - label: "SUBSCRIPT ZERO"
+    replace: "\u2080"
+    trigger: ":_0:"
+    word: true
+  - label: "SUBSCRIPT ONE"
+    replace: "\u2081"
+    trigger: ":_1:"
+    word: true
+  - label: "SUBSCRIPT TWO"
+    replace: "\u2082"
+    trigger: ":_2:"
+    word: true
+  - label: "SUBSCRIPT THREE"
+    replace: "\u2083"
+    trigger: ":_3:"
+    word: true
+  - label: "SUBSCRIPT FOUR"
+    replace: "\u2084"
+    trigger: ":_4:"
+    word: true
+  - label: "SUBSCRIPT FIVE"
+    replace: "\u2085"
+    trigger: ":_5:"
+    word: true
+  - label: "SUBSCRIPT SIX"
+    replace: "\u2086"
+    trigger: ":_6:"
+    word: true
+  - label: "SUBSCRIPT SEVEN"
+    replace: "\u2087"
+    trigger: ":_7:"
+    word: true
+  - label: "SUBSCRIPT EIGHT"
+    replace: "\u2088"
+    trigger: ":_8:"
+    word: true
+  - label: "SUBSCRIPT NINE"
+    replace: "\u2089"
+    trigger: ":_9:"
+    word: true
+
+    # LATIN SUPERSCRIPT
+  - label: "SUPERSCRIPT LATIN SMALL LETTER I"
+    replace: "\u2071"
+    trigger: ":^i:"
+    word: true
+  - label: "SUPERSCRIPT LATIN SMALL LETTER N"
+    replace: "\u207f"
+    trigger: ":^n:"
+    word: true
+  - label: "SUPERSCRIPT PLUS SIGN"
+    replace: "\u207a"
+    trigger: ":^+:"
+    word: true
+  - label: "SUPERSCRIPT MINUS"
+    replace: "\u207b"
+    trigger: ":-^:"
+    word: true
+  - label: "SUPERSCRIPT EQUALS SIGN"
+    replace: "\u207c"
+    trigger: ":^=:"
+    word: true
+  - label: "SUPERSCRIPT LEFT PARENTHESIS"
+    replace: "\u207d"
+    trigger: ":(^:"
+    word: true
+  - label: "SUPERSCRIPT RIGHT PARENTHESIS"
+    replace: "\u207e"
+    trigger: ":^):"
+    word: true
+  
+  # LATIN SUBSCRIPTS
+  - label: "LATIN SUBSCRIPT SMALL LETTER A"
+    replace: "\u2090"
+    trigger: ":_a:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER E"
+    replace: "\u2091"
+    trigger: ":_e:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER H"
+    replace: "\u2095"
+    trigger: ":_h:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER I"
+    replace: "\u1d62"
+    trigger: ":_i:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER J"
+    replace: "\u2c7c"
+    trigger: ":_j:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER K"
+    replace: "\u2096"
+    trigger: ":_k:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER L"
+    replace: "\u2097"
+    trigger: ":_l:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER M"
+    replace: "\u2098"
+    trigger: ":_m:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER N"
+    replace: "\u2099"
+    trigger: ":_n:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER O"
+    replace: "\u2092"
+    trigger: ":_o:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER P"
+    replace: "\u209a"
+    trigger: ":_p:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER R"
+    replace: "\u1d63"
+    trigger: ":_r:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER S"
+    replace: "\u209b"
+    trigger: ":_s:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER SCHWA"
+    replace: "\u2094"
+    trigger: ":_ə:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER T"
+    replace: "\u209c"
+    trigger: ":_t:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER U"
+    replace: "\u1d64"
+    trigger: ":_u:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER V"
+    replace: "\u1d65"
+    trigger: ":_v:"
+    word: true
+  - label: "LATIN SUBSCRIPT SMALL LETTER X"
+    replace: "\u2093"
+    trigger: ":_x:"
+    word: true
+  
+  # LATIN SUBSCRIPT SYMBOLS
+  - label: "SUBSCRIPT PLUS SIGN"
+    replace: "\u208a"
+    trigger: ":_+:"
+    word: true
+  - label: "SUBSCRIPT MINUS"
+    replace: "\u208b"
+    trigger: ":-_:"
+    word: true
+  - label: "SUBSCRIPT EQUALS SIGN"
+    replace: "\u208c"
+    trigger: ":_=:"
+    word: true
+  - label: "SUBSCRIPT LEFT PARENTHESIS"
+    replace: "\u208d"
+    trigger: ":(_:"
+    word: true
+  - label: "SUBSCRIPT RIGHT PARENTHESIS"
+    replace: "\u208e"
+    trigger: ":_):"
+    word: true
+
+  # GREEK SUBSCRIPT
+  - label: "GREEK SUBSCRIPT SMALL LETTER BETA"
+    replace: "\u1d66"
+    trigger: ":_β:"
+    word: true
+  - label: "GREEK SUBSCRIPT SMALL LETTER GAMMA"
+    replace: "\u1d67"
+    trigger: ":_γ:"
+    word: true
+  - label: "GREEK SUBSCRIPT SMALL LETTER RHO"
+    replace: "\u1d68"
+    trigger: ":_ρ:"
+    word: true
+  - label: "GREEK SUBSCRIPT SMALL LETTER PHI"
+    replace: "\u1d69"
+    trigger: ":_φ:"
+    word: true
+  - label: "GREEK SUBSCRIPT SMALL LETTER CHI"
+    replace: "\u1d6a"
+    trigger: ":_χ:"
+    word: true
+

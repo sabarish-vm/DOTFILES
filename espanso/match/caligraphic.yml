@@ -1,0 +1,213 @@
+matches:
+  # MATHEMATICAL SCRIPT CAPITAL LETTERS (U+1D49C+)
+  - label: "MATHEMATICAL SCRIPT CAPITAL A"
+    replace: "\U0001D49C"
+    trigger: ":mathcalA:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL B"
+    replace: "\U0001D49D"
+    trigger: ":mathcalB:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL C"
+    replace: "\U0001D49E"
+    trigger: ":mathcalC:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL D"
+    replace: "\U0001D49F"
+    trigger: ":mathcalD:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL E"
+    replace: "\U0001D4A0"
+    trigger: ":mathcalE:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL F"
+    replace: "\U0001D4A1"
+    trigger: ":mathcalF:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL G"
+    replace: "\U0001D4A2"
+    trigger: ":mathcalG:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL H"
+    replace: "\U0001D4A3"
+    trigger: ":mathcalH:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL I"
+    replace: "\U0001D4A4"
+    trigger: ":mathcalI:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL J"
+    replace: "\U0001D4A5"
+    trigger: ":mathcalJ:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL K"
+    replace: "\U0001D4A6"
+    trigger: ":mathcalK:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL L"
+    replace: "\U0001D4A7"
+    trigger: ":mathcalL:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL M"
+    replace: "\U0001D4A8"
+    trigger: ":mathcalM:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL N"
+    replace: "\U0001D4A9"
+    trigger: ":mathcalN:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL O"
+    replace: "\U0001D4AA"
+    trigger: ":mathcalO:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL P"
+    replace: "\U0001D4AB"
+    trigger: ":mathcalP:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL Q"
+    replace: "\U0001D4AC"
+    trigger: ":mathcalQ:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL R"
+    replace: "\U0001D4AD"
+    trigger: ":mathcalR:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL S"
+    replace: "\U0001D4AE"
+    trigger: ":mathcalS:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL T"
+    replace: "\U0001D4AF"
+    trigger: ":mathcalT:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL U"
+    replace: "\U0001D4B0"
+    trigger: ":mathcalU:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL V"
+    replace: "\U0001D4B1"
+    trigger: ":mathcalV:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL W"
+    replace: "\U0001D4B2"
+    trigger: ":mathcalW:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL X"
+    replace: "\U0001D4B3"
+    trigger: ":mathcalX:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL Y"
+    replace: "\U0001D4B4"
+    trigger: ":mathcalY:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT CAPITAL Z"
+    replace: "\U0001D4B5"
+    trigger: ":mathcalZ:"
+    word: true
+
+  # MATHEMATICAL SCRIPT SMALL LETTERS (U+1D4B6+)
+  - label: "MATHEMATICAL SCRIPT SMALL A"
+    replace: "\U0001D4B6"
+    trigger: ":mathscra:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL B"
+    replace: "\U0001D4B7"
+    trigger: ":mathscrb:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL C"
+    replace: "\U0001D4B8"
+    trigger: ":mathscrc:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL D"
+    replace: "\U0001D4B9"
+    trigger: ":mathscrd:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL E"
+    replace: "\U0001D4BA"
+    trigger: ":mathscre:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL F"
+    replace: "\U0001D4BB"
+    trigger: ":mathscrf:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL G"
+    replace: "\U0001D4BC"
+    trigger: ":mathscrg:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL H"
+    replace: "\U0001D4BD"
+    trigger: ":mathscrh:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL I"
+    replace: "\U0001D4BE"
+    trigger: ":mathscri:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL J"
+    replace: "\U0001D4BF"
+    trigger: ":mathscrj:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL K"
+    replace: "\U0001D4C0"
+    trigger: ":mathscrk:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL L"
+    replace: "\U0001D4C1"
+    trigger: ":mathscrl:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL M"
+    replace: "\U0001D4C2"
+    trigger: ":mathscrm:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL N"
+    replace: "\U0001D4C3"
+    trigger: ":mathscrn:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL O"
+    replace: "\U0001D4C4"
+    trigger: ":mathscro:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL P"
+    replace: "\U0001D4C5"
+    trigger: ":mathscrp:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL Q"
+    replace: "\U0001D4C6"
+    trigger: ":mathscrq:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL R"
+    replace: "\U0001D4C7"
+    trigger: ":mathscrr:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL S"
+    replace: "\U0001D4C8"
+    trigger: ":mathscrs:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL T"
+    replace: "\U0001D4C9"
+    trigger: ":mathscrt:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL U"
+    replace: "\U0001D4CA"
+    trigger: ":mathscru:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL V"
+    replace: "\U0001D4CB"
+    trigger: ":mathscrv:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL W"
+    replace: "\U0001D4CC"
+    trigger: ":mathscrw:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL X"
+    replace: "\U0001D4CD"
+    trigger: ":mathscrx:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL Y"
+    replace: "\U0001D4CE"
+    trigger: ":mathscry:"
+    word: true
+  - label: "MATHEMATICAL SCRIPT SMALL Z"
+    replace: "\U0001D4CF"
+    trigger: ":mathscrz:"
+    word: true
+

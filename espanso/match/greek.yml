@@ -1,0 +1,194 @@
+matches:
+  - label: "GREEK SMALL LETTER ALPHA"
+    replace: "\u03B1"
+    trigger: ":alpha:"
+    word: true
+  - label: "GREEK SMALL LETTER BETA"
+    replace: "\u03B2"
+    trigger: ":beta:"
+    word: true
+  - label: "GREEK SMALL LETTER GAMMA"
+    replace: "\u03B3"
+    trigger: ":gamma:"
+    word: true
+  - label: "GREEK SMALL LETTER DELTA"
+    replace: "\u03B4"
+    trigger: ":delta:"
+    word: true
+  - label: "GREEK SMALL LETTER EPSILON"
+    replace: "\u03B5"
+    trigger: ":epsilon:"
+    word: true
+  - label: "GREEK SMALL LETTER ZETA"
+    replace: "\u03B6" 
+    trigger: ":zeta:"
+    word: true
+  - label: "GREEK SMALL LETTER ETA"
+    replace: "\u03B7"
+    trigger: ":eta:"
+    word: true
+  - label: "GREEK SMALL LETTER THETA"
+    replace: "\u03B8"
+    trigger: ":theta:"
+    word: true
+  - label: "GREEK SMALL LETTER IOTA"
+    replace: "\u03B9"
+    trigger: ":iota:"
+    word: true
+  - label: "GREEK SMALL LETTER KAPPA"
+    replace: "\u03BA"
+    trigger: ":kappa:"
+    word: true
+  - label: "GREEK SMALL LETTER LAMBDA"
+    replace: "\u03BB"
+    trigger: ":lambda:"
+    word: true
+  - label: "GREEK SMALL LETTER MU"
+    replace: "\u03BC"
+    trigger: ":mu:"
+    word: true
+  - label: "GREEK SMALL LETTER NU"
+    replace: "\u03BD"
+    trigger: ":nu:"
+    word: true
+  - label: "GREEK SMALL LETTER XI"
+    replace: "\u03BE"
+    trigger: ":xi:"
+    word: true
+  - label: "GREEK SMALL LETTER OMICRON"
+    replace: "\u03BF"
+    trigger: ":omicron:"
+    word: true
+  - label: "GREEK SMALL LETTER PI"
+    replace: "\u03C0"
+    trigger: ":pi:"
+    word: true
+  - label: "GREEK SMALL LETTER RHO"
+    replace: "\u03C1"
+    trigger: ":rho:"
+    word: true
+  - label: "GREEK SMALL LETTER SIGMA"
+    replace: "\u03C3"
+    trigger: ":sigma:"
+    word: true
+  - label: "GREEK SMALL LETTER TAU"
+    replace: "\u03C4"
+    trigger: ":tau:"
+    word: true
+  - label: "GREEK SMALL LETTER UPSILON"
+    replace: "\u03C5"
+    trigger: ":upsilon:"
+    word: true
+  - label: "GREEK SMALL LETTER PHI"
+    replace: "\u03C6"
+    trigger: ":phi:"
+    word: true
+  - label: "GREEK SMALL LETTER CHI"
+    replace: "\u03C7"
+    trigger: ":chi:"
+    word: true
+  - label: "GREEK SMALL LETTER PSI"
+    replace: "\u03C8"
+    trigger: ":psi:"
+    word: true
+  - label: "GREEK SMALL LETTER OMEGA"
+    replace: "\u03C9"
+    trigger: ":omega:"
+    word: true
+
+  - label: "GREEK CAPITAL LETTER ALPHA"
+    replace: "\u0391"
+    trigger: ":Alpha:"
+    word: true
+  - label: "GREEK CAPITAL LETTER BETA"
+    replace: "\u0392"
+    trigger: ":Beta:"
+    word: true
+  - label: "GREEK CAPITAL LETTER GAMMA"
+    replace: "\u0393"
+    trigger: ":Gamma:"
+    word: true
+  - label: "GREEK CAPITAL LETTER DELTA"
+    replace: "\u0394"
+    trigger: ":Delta:"
+    word: true
+  - label: "GREEK CAPITAL LETTER EPSILON"
+    replace: "\u0395"
+    trigger: ":Epsilon:"
+    word: true
+  - label: "GREEK CAPITAL LETTER ZETA"
+    replace: "\u0396"
+    trigger: ":Zeta:"
+    word: true
+  - label: "GREEK CAPITAL LETTER ETA"
+    replace: "\u0397"
+    trigger: ":Eta:"
+    word: true
+  - label: "GREEK CAPITAL LETTER THETA"
+    replace: "\u0398"
+    trigger: ":Theta:"
+    word: true
+  - label: "GREEK CAPITAL LETTER IOTA"
+    replace: "\u0399"
+    trigger: ":Iota:"
+    word: true
+  - label: "GREEK CAPITAL LETTER KAPPA"
+    replace: "\u039A"
+    trigger: ":Kappa:"
+    word: true
+  - label: "GREEK CAPITAL LETTER LAMBDA"
+    replace: "\u039B"
+    trigger: ":Lambda:"
+    word: true
+  - label: "GREEK CAPITAL LETTER MU"
+    replace: "\u039C"
+    trigger: ":Mu:"
+    word: true
+  - label: "GREEK CAPITAL LETTER NU"
+    replace: "\u039D"
+    trigger: ":Nu:"
+    word: true
+  - label: "GREEK CAPITAL LETTER XI"
+    replace: "\u039E"
+    trigger: ":Xi:"
+    word: true
+  - label: "GREEK CAPITAL LETTER OMICRON"
+    replace: "\u039F"
+    trigger: ":Omicron:"
+    word: true
+  - label: "GREEK CAPITAL LETTER PI"
+    replace: "\u03A0"
+    trigger: ":Pi:"
+    word: true
+  - label: "GREEK CAPITAL LETTER RHO"
+    replace: "\u03A1"
+    trigger: ":Rho:"
+    word: true
+  - label: "GREEK CAPITAL LETTER SIGMA"
+    replace: "\u03A3"
+    trigger: ":Sigma:"
+    word: true
+  - label: "GREEK CAPITAL LETTER TAU"
+    replace: "\u03A4"
+    trigger: ":Tau:"
+    word: true
+  - label: "GREEK CAPITAL LETTER UPSILON"
+    replace: "\u03A5"
+    trigger: ":Upsilon:"
+    word: true
+  - label: "GREEK CAPITAL LETTER PHI"
+    replace: "\u03A6"
+    trigger: ":Phi:"
+    word: true
+  - label: "GREEK CAPITAL LETTER CHI"
+    replace: "\u03A7"
+    trigger: ":Chi:"
+    word: true
+  - label: "GREEK CAPITAL LETTER PSI"
+    replace: "\u03A8"
+    trigger: ":Psi:"
+    word: true
+  - label: "GREEK CAPITAL LETTER OMEGA"
+    replace: "\u03A9"
+    trigger: ":Omega:"
+    word: true

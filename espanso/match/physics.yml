@@ -1,0 +1,13 @@
+matches:
+  - label: "Reduced Planck constant"
+    trigger: ":hbar:"
+    replace: "ℏ"
+    word: true
+  - label: "Bra operator"
+    trigger: ":bra:"
+    replace: "⟨"
+    word: true
+  - label: "Ket operator"
+    trigger: ":ket:"
+    replace: "⟩"
+    word: true

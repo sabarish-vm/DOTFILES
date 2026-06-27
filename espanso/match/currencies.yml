@@ -1,0 +1,74 @@
+matches:
+  - label: "Australian Dollar"
+    trigger: ":aud:"
+    replace: "$"
+    word: true
+  - label: "Bitcoin"
+    trigger: ":btc:"
+    replace: "₿"
+    word: true
+  - label: "Canadian Dollar"
+    trigger: ":cad:"
+    replace: "$"
+    word: true
+  - label: "Chinese Yuan"
+    trigger: ":cny:"
+    replace: "¥"
+    word: true
+  - label: "Euro"
+    trigger: ":eur:"
+    replace: "€"
+    word: true
+  - label: "Israeli Shekel"
+    trigger: ":ils:"
+    replace: "₪"
+    word: true
+  - label: "Indian Rupee"
+    trigger: ":inr:"
+    replace: "₹"
+    word: true
+  - label: "Mexican Peso"
+    trigger: ":mxn:"
+    replace: "₱"
+    word: true
+  - label: "Nigerian Naira"
+    trigger: ":ngn:"
+    replace: "₦"
+    word: true
+  - label: "Pound Sterling"
+    trigger: ":gbp:"
+    replace: "£"
+    word: true
+  - label: "Russian Ruble"
+    trigger: ":rub:"
+    replace: "₽"
+    word: true
+  - label: "South Korean Won"
+    trigger: ":krw:"
+    replace: "₩"
+    word: true
+  - label: "Swiss Franc"
+    trigger: ":chf:"
+    replace: "₣"
+    word: true
+  - label: "Thai Baht"
+    trigger: ":thb:"
+    replace: "฿"
+    word: true
+  - label: "Turkish Lira"
+    trigger: ":try:"
+    replace: "₺"
+    word: true
+  - label: "US Dollar"
+    trigger: ":usd:"
+    replace: "$"
+    word: true
+  - label: "Vietnamese Dong"
+    trigger: ":vnd:"
+    replace: "₫"
+    word: true
+  - label: "Generic Currency"
+    trigger: ":cur:"
+    replace: "¤"
+    word: true
+

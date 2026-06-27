@@ -1,0 +1,225 @@
+matches:
+  # === BASIC COMPARISONS ===
+  - trigger: ":lt:"
+    word: true
+    label: "Less than (<)"
+    replace: "<"
+
+  - trigger: ":gt:"
+    word: true
+    label: "Greater than (>)"
+    replace: ">"
+
+  - trigger: ":le:"
+    word: true
+    label: "Less or equal (≤)"
+    replace: "≤"
+
+  - trigger: ":ge:"
+    word: true
+    label: "Greater or equal (≥)"
+    replace: "≥"
+
+  - trigger: ":eq:"
+    word: true
+    label: "Equal (=)"
+    replace: "="
+
+  # === NEGATED ===
+  - trigger: ":neq:"
+    word: true
+    label: "Not equal (≠)"
+    replace: "≠"
+
+  - trigger: ":nlt:"
+    word: true
+    label: "Not less than (≮)"
+    replace: "≮"
+
+  - trigger: ":ngt:"
+    word: true
+    label: "Not greater than (≯)"
+    replace: "≯"
+
+  - trigger: ":nle:"
+    word: true
+    label: "Not less or equal (≰)"
+    replace: "≰"
+
+  - trigger: ":nge:"
+    word: true
+    label: "Not greater or equal (≱)"
+    replace: "≱"
+
+  # === APPROX & SIMILAR ===
+  - trigger: ":approx:"
+    word: true
+    label: "Approximately equal (≈)"
+    replace: "≈"
+
+  - trigger: ":sim:"
+    word: true
+    label: "Similar (∼)"
+    replace: "∼"
+
+  - trigger: ":cong:"
+    word: true
+    label: "Congruent (≅)"
+    replace: "≅"
+
+  - trigger: ":equiv:"
+    word: true
+    label: "Equivalent (≡)"
+    replace: "≡"
+
+  # === MUCH GREATER/LESS ===
+  - trigger: ":ll:"
+    word: true
+    label: "Much less (≪)"
+    replace: "≪"
+
+  - trigger: ":gg:"
+    word: true
+    label: "Much greater (≫)"
+    replace: "≫"
+
+  - trigger: ":lesssim:"
+    word: true
+    label: "Less, similar (≲)"
+    replace: "≲"
+
+  - trigger: ":gtrsim:"
+    word: true
+    label: "Greater, similar (≳)"
+    replace: "≳"
+
+  - trigger: ":propto:"
+    word: true
+    label: "Proportional to (∝)"
+    replace: "∝"
+
+  # === ORDERING ===
+  - trigger: ":prec:"
+    word: true
+    label: "Precedes (≺)"
+    replace: "≺"
+
+  - trigger: ":succ:"
+    word: true
+    label: "Succeeds (≻)"
+    replace: "≻"
+
+  - trigger: ":preceq:"
+    word: true
+    label: "Precedes or equal (≼)"
+    replace: "≼"
+
+  - trigger: ":succeq:"
+    word: true
+    label: "Succeeds or equal (≽)"
+    replace: "≽"
+
+  # === SETS ===
+  - trigger: ":subset:"
+    word: true
+    label: "Subset (⊂)"
+    replace: "⊂"
+
+  - trigger: ":supset:"
+    word: true
+    label: "Superset (⊃)"
+    replace: "⊃"
+
+  - trigger: ":subseteq:"
+    word: true
+    label: "Subset or equal (⊆)"
+    replace: "⊆"
+
+  - trigger: ":supseteq:"
+    word: true
+    label: "Superset or equal (⊇)"
+    replace: "⊇"
+
+  - label: "ELEMENT OF"
+    replace: "∈"
+    trigger: ":in:"
+    word: true
+
+  - label: "NOT ELEMENT OF"
+    replace: "∉"
+    trigger: ":notin:"
+    word: true
+
+  # === ARITHMETIC ===
+  - trigger: ":pm:"
+    word: true
+    label: "Plus/minus (±)"
+    replace: "±"
+
+  - trigger: ":mp:"
+    word: true
+    label: "Minus/plus (∓)"
+    replace: "∓"
+
+  - trigger: ":times:"
+    word: true
+    label: "Multiplication (×)"
+    replace: "×"
+
+  - trigger: ":div:"
+    word: true
+    label: "Division (÷)"
+    replace: "÷"
+
+  - trigger: ":cdot:"
+    word: true
+    label: "Dot product (⋅)"
+    replace: "⋅"
+
+  - trigger: ":circ:"
+    word: true
+    label: "Composition (∘)"
+    replace: "∘"
+
+  # === CIRCLED ===
+  - trigger: ":oplus:"
+    word: true
+    label: "Direct sum (⊕)"
+    replace: "⊕"
+
+  - trigger: ":otimes:"
+    word: true
+    label: "Tensor product (⊗)"
+    replace: "⊗"
+
+  - trigger: ":odot:"
+    word: true
+    label: "Dot product (⊙)"
+    replace: "⊙"
+
+  # === SET OPERATIONS ===
+  - trigger: ":cup:"
+    word: true
+    label: "Union (∪)"
+    replace: "∪"
+
+  - trigger: ":cap:"
+    word: true
+    label: "Intersection (∩)"
+    replace: "∩"
+
+  - trigger: ":setminus:"
+    word: true
+    label: "Set minus (∖)"
+    replace: "∖"
+
+  # === LOGIC ===
+  - trigger: ":land:"
+    word: true
+    label: "Logical AND (∧)"
+    replace: "∧"
+
+  - trigger: ":lor:"
+    word: true
+    label: "Logical OR (∨)"
+    replace: "∨"

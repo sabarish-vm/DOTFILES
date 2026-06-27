@@ -1,0 +1,48 @@
+matches:
+  # === Derivatives ===
+  - label: "PARTIAL DIFFERENTIAL"
+    replace: "\u2202"
+    trigger: ":partial:"
+    word: true
+
+  - label: "NABLA"
+    replace: "\u2207"
+    trigger: ":nabla:"
+    word: true
+
+  # === STANDARD INTEGRALS ===
+  - trigger: ":int:"
+    word: true
+    label: "Definite/Indefinite integral (∫)"
+    replace: "∫"
+
+  - trigger: ":iint:"
+    word: true
+    label: "Double integral (∬)"
+    replace: "∬"
+
+  - trigger: ":iiint:"
+    word: true
+    label: "Triple integral (∭)"
+    replace: "∭"
+
+  - trigger: ":iiiint:"
+    word: true
+    label: "Quadruple integral (∬∬)"
+    replace: "∬∬"
+
+  # === CONTOUR & CLOSED INTEGRALS ===
+  - trigger: ":oint:"
+    word: true
+    label: "Closed line integral (∮)"
+    replace: "∮"
+
+  - trigger: ":oiint:"
+    word: true
+    label: "Closed surface integral (∯)"
+    replace: "∯"
+
+  - trigger: ":oiiint:"
+    word: true
+    label: "Closed volume integral (∰)"
+    replace: "∰"

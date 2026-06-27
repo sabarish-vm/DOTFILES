@@ -1,0 +1,105 @@
+matches:
+  # MATH SYMBOLS
+  - trigger: ":cdot:"
+    word: true
+    label: "Dot product/multiplication (⋅)"
+    replace: "⋅"
+  - trigger: ":bullet:"
+    word: true
+    label: "Bullet dot (•)"
+    replace: "•"
+  - label: "INFINITY"
+    replace: "\u221E"
+    trigger: ":infty:"
+    word: true
+  - label: "PRODUCT"
+    replace: "\u220F"
+    trigger: ":prod:"
+    word: true
+  - label: "SUMMATION"
+    replace: "\u2211"
+    trigger: ":sum:"
+    word: true
+  - label: "FOR ALL"
+    replace: "\u2200"
+    trigger: ":forall:"
+    word: true
+  - label: "THERE EXISTS"
+    replace: "\u2203"
+    trigger: ":exists:"
+    word: true
+  - label: "EMPTY SET"
+    replace: "\u2205"
+    trigger: ":emptyset:"
+    word: true
+
+  # MATH SYMBOLS - ARROWS
+  - label: "RIGHTWARDS ARROW"
+    replace: "\u2192"
+    trigger: ":rightarrow:"
+    word: true
+  - label: "LEFTWARDS ARROW"
+    replace: "\u2190"
+    trigger: ":leftarrow:"
+    word: true
+  - label: "UPWARDS ARROW"
+    replace: "\u2191"
+    trigger: ":uparrow:"
+    word: true
+  - label: "DOWNWARDS ARROW"
+    replace: "\u2193"
+    trigger: ":downarrow:"
+    word: true
+  - label: "LEFT RIGHT ARROW"
+    replace: "\u2194"
+    trigger: ":leftrightarrow:"
+    word: true
+
+  # DOUBLE ARROWS
+  - label: "RIGHTWARDS DOUBLE ARROW"
+    replace: "\u21D2"
+    triggers: [":Rightarrow:", ":implies:"]
+    word: true
+  - label: "LEFTWARDS DOUBLE ARROW"
+    replace: "\u21D0"
+    trigger: ":Leftarrow:"
+    word: true
+  - label: "UPWARDS DOUBLE ARROW"
+    replace: "\u21D1"
+    trigger: ":Uparrow:"
+    word: true
+  - label: "DOWNWARDS DOUBLE ARROW"
+    replace: "\u21D3"
+    trigger: ":Downarrow:"
+    word: true
+  - label: "LEFT RIGHT DOUBLE ARROW"
+    replace: "\u21D4"
+    trigger: ":Leftrightarrow:"
+    word: true
+
+  # === SERIES NOTATION ===
+  - trigger: ":ellipses:"
+    word: true
+    label: "Horizontal ellipsis (…)"
+    replace: "…"
+
+  - trigger: ":ddots:"
+    word: true
+    label: "Diagonal dots (⋱)"
+    replace: "⋱"
+
+  - trigger: ":vdots:"
+    word: true
+    label: "Vertical dots (⋮)"
+    replace: "⋮"
+
+  # === MISC COMMON ===
+  - trigger: ":therefore:"
+    word: true
+    label: "Therefore (∴)"
+    replace: "∴"
+
+  - trigger: ":because:"
+    word: true
+    label: "Because (∵)"
+    replace: "∵"

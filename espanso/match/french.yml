@@ -1,0 +1,122 @@
+matches:
+  - label: "French à"
+    trigger: ":`a:"
+    replace: "à"
+    word: true
+  - label: "French â"
+    trigger: ":^a:"
+    replace: "â"
+    word: true
+  - label: "French æ"
+    trigger: ":ae:"
+    replace: "æ"
+    word: true
+  - label: "French ç"
+    trigger: ":,c:"
+    replace: "ç"
+    word: true
+  - label: "French é"
+    trigger: ":'e:"
+    replace: "é"
+    word: true
+  - label: "French è"
+    trigger: ":`e:"
+    replace: "è"
+    word: true
+  - label: "French ê"
+    trigger: ":^e:"
+    replace: "ê"
+    word: true
+  - label: "French ë"
+    trigger: ":\"e:"
+    replace: "ë"
+    word: true
+  - label: "French î"
+    trigger: ":^i:"
+    replace: "î"
+    word: true
+  - label: "French ï"
+    trigger: ":\"i:"
+    replace: "ï"
+    word: true
+  - label: "French ô"
+    trigger: ":^o:"
+    replace: "ô"
+    word: true
+  - label: "French œ"
+    trigger: ":oe:"
+    replace: "œ"
+    word: true
+  - label: "French û"
+    trigger: ":^u:"
+    replace: "û"
+    word: true
+  - label: "French ÿ"
+    trigger: ":\"y:"
+    replace: "ÿ"
+    word: true
+  - label: "French À"
+    trigger: ":`A:"
+    replace: "À"
+    word: true
+  - label: "French Â"
+    trigger: ":^A:"
+    replace: "Â"
+    word: true
+  - label: "French Æ"
+    trigger: ":AE:"
+    replace: "Æ"
+    word: true
+  - label: "French Ç"
+    trigger: ":,C:"
+    replace: "Ç"
+    word: true
+  - label: "French É"
+    trigger: ":'E:"
+    replace: "É"
+    word: true
+  - label: "French È"
+    trigger: ":`E:"
+    replace: "È"
+    word: true
+  - label: "French Ê"
+    trigger: ":^E:"
+    replace: "Ê"
+    word: true
+  - label: "French Ë"
+    trigger: ':"E:'
+    replace: "Ë"
+    word: true
+  - label: "French Î"
+    trigger: ":^I:"
+    replace: "Î"
+    word: true
+  - label: "French Ï"
+    trigger: ":\"I:"
+    replace: "Ï"
+    word: true
+  - label: "French Ô"
+    trigger: ":^O:"
+    replace: "Ô"
+    word: true
+  - label: "French Œ"
+    trigger: ":OE:"
+    replace: "Œ"
+    word: true
+  - label: "French Ù"
+    trigger: ":`U:"
+    replace: "Ù"
+    word: true
+  - label: "French Û"
+    trigger: ":^U:"
+    replace: "Û"
+    word: true
+  - label: "French Ü"
+    trigger: ":\"U:"
+    replace: "Ü"
+    word: true
+  - label: "French Ÿ"
+    trigger: ":\"Y:"
+    replace: "Ÿ"
+    word: true
+
