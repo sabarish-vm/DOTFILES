@@ -7,6 +7,11 @@ function M.apply_keymap(config)
 	config.leader = { mods = "SUPER", key = "a", timeout_milliseconds = 1000 }
 
 	local keymap_definitions = {
+		{
+			mods = "SUPER",
+			key = "r",
+			action = wezterm.action.ActivateKeyTable({ name = "binding_mode", one_shot = false }),
+		},
 		{ mods = "SUPER", key = "-", action = wezterm.action.DecreaseFontSize },
 		{ mods = "SUPER", key = "+", action = wezterm.action.IncreaseFontSize },
 		{ mods = "SUPER", key = "v", action = wezterm.action.PasteFrom("Clipboard") },
@@ -15,12 +20,10 @@ function M.apply_keymap(config)
 		{ mods = "SUPER", key = "t", action = wezterm.action.SpawnTab("CurrentPaneDomain") },
 		{ mods = "SUPER", key = "w", action = wezterm.action.CloseCurrentPane({ confirm = false }) },
 		{ mods = "SUPER", key = "d", action = wezterm.action.ShowDebugOverlay },
-		-- { mods = "CTRL|SHIFT", key = "LeftArrow", action = act.SendKey({ mods = "CTRL|SHIFT", key = "LeftArrow" }) },
-		-- { mods = "CTRL|SHIFT", key = "RightArrow", action = act.SendKey({ mods = "CTRL|SHIFT", key = "RightArrow" }) },
+		{ mods = "CTRL|SHIFT", key = "[", action = act.SendKey({ mods = "CTRL|SHIFT", key = "[" }) },
+		{ mods = "CTRL|SHIFT", key = "]", action = act.SendKey({ mods = "CTRL|SHIFT", key = "]" }) },
 		{ mods = "SUPER", key = "]", action = act.ActivateTabRelative(1) },
 		{ mods = "SUPER", key = "[", action = act.ActivateTabRelative(-1) },
-		{ mods = "SUPER|SHIFT", key = "]", action = act.MoveTabRelative(1) },
-		{ mods = "SUPER|SHIFT", key = "[", action = act.MoveTabRelative(-1) },
 		{ mods = "SUPER|SHIFT", key = "P", action = act.ActivateCommandPalette },
 		{ mods = "SUPER", key = "u", action = act.CharSelect },
 		{ mods = "SUPER", key = "/", action = act.ActivateCopyMode },
@@ -55,13 +58,27 @@ function M.apply_keymap(config)
 	for i = 1, 9 do
 		table.insert(config.keys, {
 			key = tostring(i),
-			mods = "CMD",
+			mods = "SUPER",
 			action = wezterm.action.ActivateTab(i - 1), -- tabs are 0 indexed
 		})
 	end
 	for _, binding in ipairs(keymap_definitions) do
 		table.insert(config.keys, binding)
 	end
+
+	config.key_tables = {
+		binding_mode = {
+			{ key = "[", action = wezterm.action.MoveTabRelative(-1) },
+			{ key = "]", action = wezterm.action.MoveTabRelative(1) },
+			{ key = "h", action = wezterm.action.AdjustPaneSize({ "Left", 1 }) },
+			{ key = "l", action = wezterm.action.AdjustPaneSize({ "Right", 1 }) },
+			{ key = "j", action = wezterm.action.AdjustPaneSize({ "Down", 1 }) },
+			{ key = "k", action = wezterm.action.AdjustPaneSize({ "Up", 1 }) },
+			{ key = "r", action = wezterm.action.RotatePanes("Clockwise") },
+			{ key = "q", action = wezterm.action.PopKeyTable },
+			{ key = "Enter", action = wezterm.action.PopKeyTable },
+		},
+	}
 end
 
 return M

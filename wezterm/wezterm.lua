@@ -8,6 +8,7 @@ local keymaps = require("keymaps")
 local themes = require("colorthemes")
 local ssh_opts = require("ssh")
 local resurrect = require("resurrect")
+local status = require("status")
 require("cli_commands")
 
 config.font = wezterm.font("JetBrainsMono Nerd Font")
@@ -24,6 +25,7 @@ config.max_fps = 60
 
 keymaps.apply_keymap(config)
 themes.theme_picker(config)
+status.add_status_bar()
 
 config.ssh_domains = ssh_opts
 resurrect.apply_keymap(config)
