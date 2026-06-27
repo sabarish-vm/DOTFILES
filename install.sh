@@ -83,6 +83,10 @@ while [ "$#" -gt 0 ]; do
         zsh_ins
         shift 1
         ;;
+    --pixi)
+        link "$DOTFILES/pixi/pixi.linker"
+        shift 1
+        ;;
     --all)
         all
         exit 0
