@@ -1,6 +1,6 @@
 paths="
-/opt/homebrew/bin/
-$HOME/.cargo/bin/
+/opt/homebrew/bin
+$HOME/.cargo/bin
 "
 
 stacked="$($DOTFILES/bz-sh/path_gen ${paths})"
