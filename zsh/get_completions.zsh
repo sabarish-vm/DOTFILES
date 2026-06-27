@@ -6,9 +6,9 @@ else
     zellij setup --generate-completion zsh > "$DOTFILES/zsh/completions/_zellij"
 fi
 
-if [ -f "$DOTFILES/zsh/completions/_eza" ] ; then 
+if [ -f "$DOTFILES/zsh/completions/_eza" ] ; then
     :
-else 
+else
     gitget https://github.com/eza-community/eza/blob/main/completions/zsh/_eza $DOTFILES/zsh/completions/_eza
 fi
 
