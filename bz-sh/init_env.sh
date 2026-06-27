@@ -4,6 +4,8 @@ export LANG="en_US.UTF-8"
 export PATH="$DOT_OPTBIN:$PATH"
 export PATH="$BINMGR_BIN:$EGET_BIN:$PATH"
 
+[ -n "${DOT_BREW_HOME}" ] && $(eval $DOT_BREW_HOME/bin/brew shellenv)
+
 devname=$(cat "$HOME/.device_name") &>/dev/null && export DEVICE_NAME="$devname" ||
     {
         printf "%s" "$HOME/.device_name file missing"

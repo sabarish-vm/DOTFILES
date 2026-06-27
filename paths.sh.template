@@ -1,12 +1,14 @@
 ## COPY THIS FILE TO paths.sh and add paths
 
 ## Changing DOTFILES path might break something, use with caution
+export XDG_CONFIG_HOME="$HOME/.config"
 export DOTFILES="$HOME/.dotfiles"
 ## CAN BE CHANGED / VALUES ONLY FOR REFERENCE
 export DOT_OPT="$HOME/opt"
-export DOT_OPTBIN="$HOME/opt/bin"
-export EGET_BIN="$HOME/opt/eget/bin"
+export DOT_OPTBIN="$DOT_OPT/bin"
+export EGET_BIN="$DOT_OPT/eget/bin"
 export ZSH_PLUGINS_DIR="$HOME/.zsh_plugins/"
+export BINMGR_BIN="$DOT_OPT/bin-mgr"
 
 ## EVERYTHING BELOW NEEDS TO BE PROVIDED
 ## The syntax is as follows,
@@ -21,5 +23,9 @@ false && export DOT_CONDAEXE=""
 ## path to the directory where micromamba stores and manages envs
 ## ensure that micromamba executable is in the path
 false && export DOT_MAMBA_DIR=""
+## use pixi
+false && export PIXI_HOME="$DOT_OPT/pixi"
+## Homebrew Home path
+false && export DOT_BREW_HOME=""
 ## Change socket directory for zellij
 false && export ZELLIJ_SOCKET_DIR=""
