@@ -1,0 +1,11 @@
+return {
+	{
+		name = "any.name",
+		username = "username",
+		remote_address = "address.org",
+		remote_wezterm_path = "/opt/wherever/wezterm",
+		ssh_option = {
+			identityfile = "$HOME/.ssh/identify_file_to_the_remote",
+		},
+	},
+}
