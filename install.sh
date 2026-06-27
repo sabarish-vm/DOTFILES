@@ -1,14 +1,15 @@
-#!/usr/bin/env sh
-
-[ -f "$DOTFILES/paths.sh" ] && . "$DOTFILES/paths.sh" || {
-    echo "Setup paths.sh file"
-    exit
+#!/usr/bin/env bash
+set -e
+help() {
+    echo "--conda        Setup conda init files and condarc"
+    echo "--cli_manager  Setup a cli_manager directory"
+    echo "--zsh          Setup zsh rc"
+    echo "--all          Setup all the above in the same order as above"
+    echo "--link <ARG>   Setup the links for <ARG>."
+    echo "               Use a or all for setting up all links"
+    echo "               Use the module name in place of <ARG> to setup that particular one"
+    echo "               e.g. --link zsh to setup the zshrc link"
 }
-mkdir -p "$DOT_OPT"
-mkdir -p "$DOT_OPTBIN"
-mkdir -p "$EGET_BIN"
-mkdir -p "$ZSH_PLUGINS_DIR"
-
 link() {
     linkerFile="$1"
     sourceFile="$(head "${linkerFile}" | awk -F '==' '{ printf $1 }')"
@@ -62,16 +63,11 @@ linker() {
     fi
 }
 
-help() {
-    echo "--conda        Setup conda init files and condarc"
-    echo "--cli_manager  Setup a cli_manager directory"
-    echo "--zsh          Setup zsh rc"
-    echo "--all          Setup all the above in the same order as above"
-    echo "--link <ARG>   Setup the links for <ARG>."
-    echo "               Use a or all for setting up all links"
-    echo "               Use the module name in place of <ARG> to setup that particular one"
-    echo "               e.g. --link zsh to setup the zshrc link"
-}
+if [ "$#" -gt 0 ]; then
+    :
+else
+    exit 1
+fi
 
 while [ "$#" -gt 0 ]; do
     case "$1" in
@@ -105,3 +101,12 @@ while [ "$#" -gt 0 ]; do
         ;;
     esac
 done
+
+[ -f "$DOTFILES/paths.sh" ] && source "$DOTFILES/paths.sh" || {
+    echo "Setup paths.sh file"
+    exit
+}
+mkdir -p "$DOT_OPT"
+mkdir -p "$DOT_OPTBIN"
+mkdir -p "$EGET_BIN"
+mkdir -p "$ZSH_PLUGINS_DIR"
