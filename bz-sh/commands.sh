@@ -60,7 +60,7 @@ nvim() {
 }
 
 pixienv() {
-    pixi "$@" -m "${DOT_OPT}/pixienvs/"
+    pixi "$1" -m "${DOT_OPT}/pixienvs/" "${@:2}"
 }
 
 wezrun() {
