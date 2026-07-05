@@ -129,7 +129,8 @@ alt-equal = 'resize smart +50'
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 alt-1 = '''exec-and-forget
     bash -c '
-    if  grep -q -i "wezterm" <<< "$(/opt/homebrew/bin/aerospace list-windows --workspace Wezterm)"   ; then
+    grep_out=$(/opt/homebrew/bin/aerospace list-windows --workspace Wezterm | grep -i "wezterm")
+    if  [ "$?" -eq 0 ] ; then
         /opt/homebrew/bin/aerospace workspace "Wezterm"
     else
         /opt/homebrew/bin/aerospace workspace "Wezterm"
