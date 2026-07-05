@@ -127,16 +127,7 @@ alt-minus = 'resize smart -50'
 alt-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = '''exec-and-forget
-    bash -c '
-    grep_out=$(/opt/homebrew/bin/aerospace list-windows --workspace Wezterm | grep -i "wezterm")
-    if  [ "$?" -eq 0 ] ; then
-        /opt/homebrew/bin/aerospace workspace "Wezterm"
-    else
-        /opt/homebrew/bin/aerospace workspace "Wezterm"
-        env -i open -na '/Applications/WezTerm.app'
-    fi'
-    '''
+alt-1 = ['exec-and-forget open /Applications/WezTerm.app/', 'workspace Wezterm']
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
