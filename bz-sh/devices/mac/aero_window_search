@@ -9,7 +9,7 @@ ctrl_c() {
 trap ctrl_c INT
 
 while true; do
-    aerospace list-windows --all |
-        fzf --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
+    cat <(printf "Window ID | App Name | Monitor ID | App PID | App Bundle ID\n") \
+        <(aerospace list-windows --all --format '%{window-id} | %{app-name} | %{monitor-id} | %{app-pid} | %{app-bundle-id}') | column -t -s '|' | fzf --header-lines=1 --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
     sleep 0.2
 done
