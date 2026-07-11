@@ -14,7 +14,7 @@ fi
 while [[ "$#" -gt 0 ]]; do
     case "$1" in
     -a)
-        _getweather Hamburg Boston Geneva Chennai Mayiladuthurai Madurai Wellington
+        _getweather Hamburg Boston Paris Geneva Chennai Mayiladuthurai Madurai Wellington
         shift 1
         ;;
     -l)
