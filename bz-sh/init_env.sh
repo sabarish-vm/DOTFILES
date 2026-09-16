@@ -6,6 +6,8 @@ export LANG="en_US.UTF-8"
 [ -n "$BINMGR_BIN" ] && export PATH="$BINMGR_BIN:$PATH"
 [ -n "${DOT_BREW_HOME}" ] && eval "$($DOT_BREW_HOME/bin/brew shellenv)"
 [ -n "${PIXI_HOME}" ] && export PATH="$PIXI_HOME/bin:$PATH"
+[ -n "${PNPM_HOME}" ] && export PATH="$PNPM_HOME:$PATH"
+[ -n "$CARGO_HOME" ] && export PATH="${CARGO_HOME}/bin:$PATH"
 
 devname=$(cat "$HOME/.device_name") &>/dev/null && export DEVICE_NAME="$devname" ||
     {

@@ -23,6 +23,8 @@ false && export DOT_CONDAEXE=""
 ## path to the directory where micromamba stores and manages envs
 ## ensure that micromamba executable is in the path
 false && export DOT_MAMBA_DIR=""
+## use cargo
+false && export CARGO_HOME="$HOME/.cargo"
 ## use pixi
 false && export PIXI_HOME="$DOT_OPT/pixi"
 ## Homebrew Home path
