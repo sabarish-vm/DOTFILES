@@ -9,7 +9,6 @@ welcome_message=''
 . "$DOTFILES/mamba/mamba.zsh"
 . "$DOTFILES/zsh/plugins.zsh"
 
-. "$DOTFILES/zsh/options.zsh"
 . "$DOTFILES/bz-sh/aliases.sh"
 . "$DOTFILES/bz-sh/commands.sh"
 
@@ -23,4 +22,5 @@ welcome_message=''
 
 . "$DOTFILES/fnpm/fnm.sh"
 . "$DOTFILES/fnpm/pnpm.sh"
+. "$DOTFILES/zsh/options.zsh"
 . "$DOTFILES/bz-sh/device_finalization.sh"
