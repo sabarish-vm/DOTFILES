@@ -30,4 +30,20 @@ status.add_status_bar()
 config.ssh_domains = ssh_opts
 resurrect.apply_keymap(config)
 
+wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
+	local user_title = tab.tab_title
+	local index = tab.tab_index + 1
+	local text = " " .. index
+	if user_title and #user_title > 0 then
+		text = text .. ": "
+		return {
+			{ Text = text .. user_title .. " " },
+		}
+	else
+		return {
+			{ Text = " " .. index .. " " },
+		}
+	end
+end)
+
 return config
