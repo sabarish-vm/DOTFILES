@@ -15,3 +15,5 @@ pixi g sync
 # Set up the CLI tools
 echo 'eval "$(fzf --bash)"' >>"$HOME/.bashrc"
 echo 'eval "$(zoxide init bash)"' >>"$HOME/.bashrc"
+
+echo 'Restart your shell. Run "exec bash -l" or "source ~/.bashrc" or just restart shell'
