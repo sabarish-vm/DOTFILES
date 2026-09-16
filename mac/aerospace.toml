@@ -238,12 +238,20 @@ run = ['move-node-to-workspace T']
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'finder'
-run = ['move-node-to-workspace F', 'layout floating']
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'finder'
-run = ['move-node-to-workspace F', 'layout floating']
+run = ['move-node-to-workspace E', 'layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
 run = ['move-node-to-workspace S']
+
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+run = ['move-node-to-workspace F']
+
+[[on-window-detected]]
+if.app-id = 'net.mullvad.mullvadbrowser'
+run = ['move-node-to-workspace M']
+
+[[on-window-detected]]
+if.app-id = 'com.splode.pomotroid'
+run = ['layout floating']
