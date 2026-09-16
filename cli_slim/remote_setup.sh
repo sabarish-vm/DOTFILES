@@ -9,7 +9,7 @@ export PATH="$ACTUAL_PIXI_HOME/bin:$PATH"
 mkdir -p "$ACTUAL_PIXI_HOME/manifests/"
 
 # Get the pixi-global.toml from somewhere
-curl -sL raw.githubusercontent.com/sabarish-vm/dotfiles/main/cli_slim/pixi-global.toml >"$ACTUAL_PIXI_HOME/manifests/pixi-global.toml"
+curl -fsSL raw.githubusercontent.com/sabarish-vm/dotfiles/main/cli_slim/pixi-global.toml >"$ACTUAL_PIXI_HOME/manifests/pixi-global.toml"
 pixi g sync
 
 # Set up the CLI tools
