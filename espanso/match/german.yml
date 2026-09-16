@@ -1,29 +1,29 @@
 matches:
   - label: "German ä"
-    trigger: ":\"a:"
+    trigger: ':"a:'
     replace: "ä"
-    word: true
+    word: false
   - label: "German ö"
-    trigger: ":\"o:"
+    trigger: ':"o:'
     replace: "ö"
-    word: true
+    word: false
   - label: "German ü"
-    trigger: ":\"u:"
+    trigger: ':"u:'
     replace: "ü"
-    word: true
+    word: false
   - label: "German Ä"
-    trigger: ":\"A:"
+    trigger: ':"A:'
     replace: "Ä"
-    word: true
+    word: false
   - label: "German Ö"
-    trigger: ":\"O:"
+    trigger: ':"O:'
     replace: "Ö"
-    word: true
+    word: false
   - label: "German Ü"
-    trigger: ":\"U:"
+    trigger: ':"U:'
     replace: "Ü"
-    word: true
+    word: false
   - label: "German ß"
     trigger: ":ss:"
     replace: "ß"
-    word: true
+    word: false

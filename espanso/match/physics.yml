@@ -11,3 +11,7 @@ matches:
     trigger: ":ket:"
     replace: "⟩"
     word: true
+  - label: degree
+    replace: "\u00B0"
+    trigger: ":degree:"
+    word: false

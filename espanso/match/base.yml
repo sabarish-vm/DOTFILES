@@ -1,6 +1,5 @@
 matches:
-  # Print the current date
-  - trigger: ":date"
+  - trigger: ":date:"
     replace: "{{mydate}}"
     vars:
       - name: mydate
@@ -33,3 +32,23 @@ matches:
         type: shell
         params:
           cmd: "numbat -e '{{input.val}}' --pretty-print never"
+
+  - trigger: ":italic:"
+    replace: "{{solved}}"
+    vars:
+      - name: "input"
+        type: "form"
+        params:
+          layout: |
+            [[val]]
+      - name: "solved"
+        type: shell
+        params:
+          cmd: |
+            /opt/homebrew/bin/python3 -c '
+            text = "{{input.val}}"
+            normal_chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            italic_chars = "𝑎𝑏𝑐𝑑𝑒𝑓𝑔ℎ𝑖𝑗𝑘𝑙𝑚𝑛𝑜𝑝𝑞𝑟𝑠𝑡𝑢𝑣𝑤𝑥𝑦𝑧𝐴𝐵𝐶𝐷𝐸𝐹𝐺𝐻𝐼𝐽𝐾𝐿𝑀𝑁𝑂𝑃𝑄𝑅𝑆𝑇𝑈𝑉𝑊𝑋𝑌𝑍"
+            trans = str.maketrans(normal_chars, italic_chars)
+            print(text.translate(trans), end="")
+            '
