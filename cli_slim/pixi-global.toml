@@ -1,71 +1,31 @@
 version = 1
 
-[envs.ripgrep]
+[envs.fzf]
 channels = ["conda-forge"]
-dependencies = { ripgrep = "*" }
-exposed = { rg = "rg" }
-
-[envs.helix]
-channels = ["conda-forge"]
-dependencies = { helix = "*" }
-exposed = { hx = "hx" }
-
-[envs.nvim]
-channels = ["conda-forge"]
-dependencies = { nvim = "*", unibilium = "<2.1.4" }
-exposed = { nvim = "nvim" }
+dependencies = { fzf = "*" }
+exposed = { fzf = "fzf" }
 
 [envs.zoxide]
 channels = ["conda-forge"]
 dependencies = { zoxide = "*" }
 exposed = { zoxide = "zoxide" }
 
-[envs.lazygit]
+[envs.ripgrep]
 channels = ["conda-forge"]
-dependencies = { lazygit = "*" }
-exposed = { lazygit = "lazygit" }
-
-[envs.fzf]
-channels = ["conda-forge"]
-dependencies = { fzf = "*" }
-exposed = { fzf = "fzf" }
-
-[envs.dust]
-channels = ["conda-forge"]
-dependencies = { dust = "*" }
-exposed = { dust = "dust" }
-
-[envs.eza]
-channels = ["conda-forge"]
-dependencies = { eza = "*" }
-exposed = { eza = "eza" }
+dependencies = { ripgrep = "*" }
+exposed = { rg = "rg" }
 
 [envs.bat]
 channels = ["conda-forge"]
 dependencies = { bat = "*" }
 exposed = { bat = "bat" }
 
-[envs.moor]
+[envs.nvim]
 channels = ["conda-forge"]
-dependencies = { moor = "*" }
-exposed = { moor = "moor" }
-
-[envs.git-delta]
-channels = ["conda-forge"]
-dependencies = { git-delta = "*" }
-exposed = { delta = "delta" }
+dependencies = { nvim = "*", unibilium = "<2.1.4" }
+exposed = { nvim = "nvim" }
 
 [envs.fd-find]
 channels = ["conda-forge"]
 dependencies = { fd-find = "*" }
 exposed = { fd = "fd" }
-
-[envs.zellij]
-channels = ["conda-forge"]
-dependencies = { zellij = "*" }
-exposed = { zellij = "zellij" }
-
-[envs.yazi]
-channels = ["conda-forge"]
-dependencies = { yazi = "*" }
-exposed = { ya = "ya", yazi = "yazi" }
