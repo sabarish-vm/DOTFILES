@@ -8,6 +8,7 @@ export LANG="en_US.UTF-8"
 [ -n "${PIXI_HOME}" ] && export PATH="$PIXI_HOME/bin:$PATH"
 [ -n "${PNPM_HOME}" ] && export PATH="$PNPM_HOME:$PATH"
 [ -n "$CARGO_HOME" ] && export PATH="${CARGO_HOME}/bin:$PATH"
+command -v nvim &>/dev/null && export EDITOR="nvim"
 
 devname=$(cat "$HOME/.device_name") &>/dev/null && export DEVICE_NAME="$devname" ||
     {
