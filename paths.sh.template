@@ -18,18 +18,18 @@ export BINMGR_BIN="$DOT_OPT/bin-mgr"
 ## e.g. if you want to use conda,
 ##   bool must be set to true and "DOT_CONDAEXE" must be a full path
 ##   pointing to the executable conda
-false && export DOT_CONDAEXE=""
+false && export DOT_CONDAEXE="" || :
 ## use micromamba
 ## path to the directory where micromamba stores and manages envs
 ## ensure that micromamba executable is in the path
-false && export DOT_MAMBA_DIR=""
+false && export DOT_MAMBA_DIR="" || :
 ## use cargo
-false && export CARGO_HOME="$HOME/.cargo"
+false && export CARGO_HOME="$HOME/.cargo" || :
 ## use pixi
-false && export PIXI_HOME="$DOT_OPT/pixi"
+false && export PIXI_HOME="$DOT_OPT/pixi" || :
 ## Homebrew Home path
-false && export DOT_BREW_HOME=""
+false && export DOT_BREW_HOME="" || :
 ## Change socket directory for zellij
-false && export ZELLIJ_SOCKET_DIR=""
+false && export ZELLIJ_SOCKET_DIR="" || :
 ## fnm installation path
-true && export DOT_FNM="$DOT_OPT/fnm"
+false && export DOT_FNM="$DOT_OPT/fnm" && export PNPM_HOME="$DOT_OPT/pnpm" || :
