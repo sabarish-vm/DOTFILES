@@ -1,31 +1,21 @@
 version = 1
 
-[envs.fzf]
+[envs.shell]
 channels = ["conda-forge"]
-dependencies = { fzf = "*" }
-exposed = { fzf = "fzf" }
 
-[envs.zoxide]
-channels = ["conda-forge"]
-dependencies = { zoxide = "*" }
-exposed = { zoxide = "zoxide" }
+[envs.shell.dependencies]
+fzf = "*"
+zoxide = "*"
+bat = "*"
+fd-find = "*"
+rigrep = "*"
+nvim = "*"
+unibilium = "<2.1.4"
 
-[envs.ripgrep]
-channels = ["conda-forge"]
-dependencies = { ripgrep = "*" }
-exposed = { rg = "rg" }
-
-[envs.bat]
-channels = ["conda-forge"]
-dependencies = { bat = "*" }
-exposed = { bat = "bat" }
-
-[envs.nvim]
-channels = ["conda-forge"]
-dependencies = { nvim = "*", unibilium = "<2.1.4" }
-exposed = { nvim = "nvim" }
-
-[envs.fd-find]
-channels = ["conda-forge"]
-dependencies = { fd-find = "*" }
-exposed = { fd = "fd" }
+[envs.shell.exposed]
+fzf = "fzf"
+zoxide = "zoxide"
+bat = "bat"
+fd = "fd"
+rg = "rg"
+nvim = "nvim"
