@@ -8,7 +8,7 @@ fzf = "*"
 zoxide = "*"
 bat = "*"
 fd-find = "*"
-rigrep = "*"
+ripgrep = "*"
 nvim = "*"
 unibilium = "<2.1.4"
 
