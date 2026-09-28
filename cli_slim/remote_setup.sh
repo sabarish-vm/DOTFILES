@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
 mkdir -p "$HOME/.config/"
+mkdir -p "$HOME/.config/mise"
+curl -fsSL raw.githubusercontent.com/sabarish-vm/dotfiles/main/cli_slim/mise.toml >"$HOME/.config/mise/config.toml"
 
 # Install mise
 export PATH="$HOME/.local/bin:$PATH"
 curl -fsSL https://mise.run | sh
+echo 'eval "$(mise activate bash)"' >>"$HOME/.bashrc"
 eval "$(mise activate bash)"
 
 # Install PIXI
@@ -13,6 +16,7 @@ ACTUAL_PIXI_HOME="${PIXI_HOME:-$HOME/.pixi}"
 export PATH="$ACTUAL_PIXI_HOME/bin:$PATH"
 curl -fsSL https://pixi.sh/install.sh | sh
 echo "export PATH=$ACTUAL_PIXI_HOME/bin:\$PATH" >>"$HOME/.bashrc"
+export PATH="${ACTUAL_PIXI_HOME}/bin:$PATH"
 mkdir -p "$ACTUAL_PIXI_HOME/manifests/"
 
 # Get the pixi-global.toml from somewhere
