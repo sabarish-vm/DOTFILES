@@ -255,3 +255,7 @@ run = ['move-node-to-workspace M']
 [[on-window-detected]]
 if.app-id = 'com.splode.pomotroid'
 run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id = 'org.keepassxc.keepassxc'
+run = ['layout floating']
