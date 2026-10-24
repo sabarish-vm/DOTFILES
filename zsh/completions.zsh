@@ -2,6 +2,7 @@ fpath=(
   ${HOMEBREW_PREFIX:+${HOMEBREW_PREFIX}/share/zsh-completions}
   ${HOMEBREW_PREFIX:+${HOMEBREW_PREFIX}/share/zsh/site-functions}
   ${PIXI_HOME:+${PIXI_HOME}/completions/zsh}
+  $HOME/.local/share/zsh/site-functions
   $fpath
 )
 autoload -U compinit; compinit
