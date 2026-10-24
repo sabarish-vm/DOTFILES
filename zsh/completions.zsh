@@ -1,12 +1,16 @@
-fpath=($DOTFILES/zsh/completions $fpath)
-
+fpath=(
+  ${HOMEBREW_PREFIX:+${HOMEBREW_PREFIX}/share/zsh-completions}
+  ${HOMEBREW_PREFIX:+${HOMEBREW_PREFIX}/share/zsh/site-functions}
+  ${PIXI_HOME:+${PIXI_HOME}/completions/zsh}
+  $fpath
+)
 autoload -U compinit; compinit
 _comp_options+=(globdots)   # With hidden files
 setopt MENU_COMPLETE        # Automatically highlight first element of completion menu
 setopt AUTO_LIST
 
 zstyle ':completion:*' use-cache 1
-zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
+zstyle ':completion:*' cache-path "${XDG_CACHE_HOME:-$HOME/.cache}/zsh/.zcompcache"
 # # Define completers
 zstyle ':completion:*' list-prompt   ''
 zstyle ':completion:*' select-prompt ''
@@ -20,4 +24,6 @@ zstyle ':completion:*:*:z:*' tag-order local-directories directory-stack path-di
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':fzf-tab:complete:*' fzf-bindings 'tab:toggle+down,shift-tab:toggle+up'
 zstyle ':fzf-tab:*' switch-group ',' '.'
+
+compdef _pixi pixienv
 
