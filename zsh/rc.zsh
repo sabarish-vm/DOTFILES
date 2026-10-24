@@ -21,6 +21,7 @@ welcome_message=''
 
 . "$DOTFILES/fnpm/fnm.sh"
 . "$DOTFILES/direnv/direnv.sh"
+. "$DOTFILES/mise/mise.zsh"
 . "$DOTFILES/zsh/options.zsh"
 . "$DOTFILES/zsh/completions.zsh"
 . "$DOTFILES/bz-sh/device_finalization.sh"

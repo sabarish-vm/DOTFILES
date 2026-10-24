@@ -6,9 +6,9 @@ export DOTFILES="$HOME/.dotfiles"
 ## CAN BE CHANGED / VALUES ONLY FOR REFERENCE
 export DOT_OPT="$HOME/opt"
 export DOT_OPTBIN="$DOT_OPT/bin"
-export EGET_BIN="$DOT_OPT/eget/bin"
+export EGET_BIN="$DOT_OPT/eget/bin" #use mise instead
 export ZSH_PLUGINS_DIR="$HOME/.zsh_plugins/"
-export BINMGR_BIN="$DOT_OPT/bin-mgr"
+export BINMGR_BIN="$DOT_OPT/bin-mgr" #use mise instead
 
 ## EVERYTHING BELOW NEEDS TO BE PROVIDED
 ## The syntax is as follows,
@@ -21,7 +21,6 @@ export BINMGR_BIN="$DOT_OPT/bin-mgr"
 false && export DOT_CONDAEXE="" || :
 ## use micromamba
 ## path to the directory where micromamba stores and manages envs
-## ensure that micromamba executable is in the path
 false && export DOT_MAMBA_DIR="" || :
 ## use cargo
 false && export CARGO_HOME="$HOME/.cargo" || :
@@ -33,3 +32,5 @@ false && export DOT_BREW_HOME="" || :
 false && export ZELLIJ_SOCKET_DIR="" || :
 ## fnm installation path
 false && export DOT_FNM="$DOT_OPT/fnm" && export PNPM_HOME="$DOT_OPT/pnpm" || :
+## use mise
+false && . "$DOTFILES/mise/env.sh" || :
